@@ -1,0 +1,213 @@
+<?php
+
+$selected_text = 'selected="selected"';
+$postedData = $block->getRequest()->getPostValue();
+
+$postedData["txtUserName"] = isset($postedData["txtUserName"]) ? $postedData["txtUserName"] : "";
+$postedData["txtPassword"] = isset($postedData["txtPassword"]) ? $postedData["txtPassword"] : "";
+
+$postedData["txtId"] = isset($postedData["txtId"]) ? $postedData["txtId"] : "";
+$postedData["cboModule"] = isset($postedData["cboModule"]) ? $postedData["cboModule"] : "";
+$postedData["txtSubmittedFrom"] = isset($postedData["txtSubmittedFrom"]) ? $postedData["txtSubmittedFrom"] : "";
+$postedData["txtSubmittedTo"] = isset($postedData["txtSubmittedTo"]) ? $postedData["txtSubmittedTo"] : "";
+?>
+<form id="searchform" name="searchform" action="" method="POST">
+    <style>
+            .navigation,
+            .breadcrumbs,
+            .page-header .header.panel,
+            .header.content,
+            .footer.content,
+            .page-wrapper > .widget,
+            .page-wrapper > .page-bottom,
+            .block.category.event,
+            .top-container,
+            .page-main {
+                max-width:none;
+            }
+    </style>
+    <fieldset style="width:800px;">
+        <legend>Search Criteria</legend>
+        <table border="0" style="border-collapse:collapse;" width="800px" cellpadding="2">
+            <tr>
+                <td>Username</td><td>
+                <td><input name="txtUserName" type="text" 
+                           value="<?= $block->escapeHtml($postedData["txtUserName"]) ?>" />
+                </td>
+                <td>Code</td>
+                <td><input name="txtPassword" type="password" 
+                           value="<?= $block->escapeHtml($postedData["txtPassword"]) ?>" />
+                </td>    
+            </tr>
+            <tr>
+                <td>Job ID</td><td>
+                <td><input name="txtId" value="<?= $block->escapeHtml($postedData["txtId"]) ?>" /></td>    
+                <td>Module</td>
+                <td>
+                    <select name="cboModule">
+                        <option value="ALL" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "ALL" ? $selected_text : "") ?>
+                                >All</option>
+                        <option value="" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "" ? $selected_text : "") ?>
+                                >import</option>
+                        <option value="images" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "images" ? $selected_text : "") ?>
+                            >images</option>
+                        <option value="delete" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "delete" ? $selected_text : "") ?>
+                                >delete (product)</option>
+                        <option value="invprice" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "invprice" ? $selected_text : "") ?>
+                                >invprice</option>
+                        <option value="shipping" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "shipping" ? $selected_text : "") ?>
+                                >shipping</option>
+                        <option value="dod" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "dod" ? $selected_text : "") ?>
+                                >dod</option>
+                        <option value="refund" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "refund" ? $selected_text : "") ?>
+                                >refund</option>
+                        <option value="order_payment_capture" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "order_payment_capture"
+                                ? $selected_text : "") ?>
+                                >order_payment_capture</option>
+                        <option value="order_cancel" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "order_cancel"
+                            ? $selected_text : "") ?>
+                                >order_cancel</option>
+                        <option value="order_field_update" 
+                            <?= $block->escapeHtml($postedData["cboModule"] == "order_field_update"
+                            ? $selected_text : "") ?>
+                                >order_field_update</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Submitted Date From</td><td>
+                <td><input name="txtSubmittedFrom" class="date" 
+                           value="<?= $block->escapeHtml($postedData["txtSubmittedFrom"]) ?>" /></td>
+                <td>To</td>
+                <td><input name="txtSubmittedTo" class="date" 
+                           value="<?= $block->escapeHtml($postedData["txtSubmittedTo"]) ?>" /></td>
+            </tr>
+            <tr><td><input name="btnSearch" type="submit" value="Search" /></td></tr>
+        </table>
+    </fieldset>
+</form>
+<?php
+if ($block->isAuthenticated()) {
+    $_gridrecords = $block->getCollection(
+        $postedData["txtId"],
+        $postedData["cboModule"],
+        $postedData["txtSubmittedFrom"],
+        $postedData["txtSubmittedTo"]
+    );
+
+    // get collection which we set in block class
+    ?>
+
+    <?php if ($_gridrecords && count($_gridrecords)) { ?>
+        <div class="table-wrapper orders-history">
+            <table class="data table table-order-items history" id="my-orders-table">
+                <caption class="table-caption"><?= $block->escapeHtml('Grid Record') ?></caption>
+                <thead>
+                    <tr>
+                        <th scope="col" class="col id"><?= $block->escapeHtml(__('ID #')) ?></th>
+                        <th scope="col" class="col id"><?= $block->escapeHtml(__('Module')) ?></th>
+                        <th scope="col" class="col date"><?= $block->escapeHtml(__('Submitted On')) ?></th>
+                        <th scope="col" class="col date">Processed On</th>
+                        <th scope="col" class="col status"><?= $block->escapeHtml(__('Status')) ?></th>
+                        <th scope="col" class="col job"><?= $block->escapeHtml(__('Job')) ?></th>
+                        <th scope="col" class="col joblog"><?= $block->escapeHtml(__('Log')) ?></th>
+                        <th scope="col" class="col jobstacktrace"><?= $block->escapeHtml(__('Stack Trace')) ?></th>
+                        <th scope="col" class="col ">&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    // read collection as magento1.x and display in list
+                    foreach ($_gridrecords as $_gridrecord) {
+                        $status = $_gridrecord->getStatus();
+                        $color = "";
+                        switch ($_gridrecord->getStatus()) {
+                            case -1:
+                                $status = "error";
+                                $color = "#FFAF9B";
+                                break;
+                            case 0:
+                                $status = "submitted";
+                                $color = "#FFFF99";
+                                break;
+                            case 1:
+                                $status = "processing";
+                                $color = "#A8FFA8";
+                                break;
+                            case 2:
+                                $status = "completed";
+                                $color = "#CAE4FF";
+                                break;
+                        }
+                        ?>
+                        <tr style="background-color:<?= $block->escapeHtml($color) ?>">
+                            <td class="col id">
+                                <?= $block->escapeHtml($_gridrecord->getId()) ?>
+                            </td>
+                            <td class="col">
+                                <?= $block->escapeHtml(
+                                    $_gridrecord->getModule() == "" ? "import" : $_gridrecord->getModule()
+                                ) ?>
+                            </td>
+                            <td class="col date"><?= $block->escapeHtml($_gridrecord->getSubmittedon()) ?></td>
+                            <td class="col date"><?= $block->escapeHtml($_gridrecord->getProcessedon()) ?></td>
+                            <td class="col status"><?= $block->escapeHtml($status) ?></td>
+                            <td class="col job">
+                                <a target="_blank" 
+                                href="<?=
+                                      $block->escapeHtml(
+                                          $block->getQueryString(
+                                              'getjob',
+                                              $_gridrecord->getId(),
+                                              $postedData
+                                          )
+                                      )
+                                        ?>">Job</a>
+                            </td>
+                            <td class="col joblog">
+                                <a target="_blank" 
+                                   href="<?=
+                                          $block->escapeHtml(
+                                              $block->getQueryString(
+                                                  'joblog',
+                                                  $_gridrecord->getId(),
+                                                  $postedData
+                                              )
+                                          )
+                                            ?>">Log</a>
+                            </td>
+                            <td class="col jobstacktrace">
+                                <a target="_blank" 
+                                    href="<?=
+                                          $block->escapeHtml(
+                                              $block->getQueryString(
+                                                  'jobstacktrace',
+                                                  $_gridrecord->getId(),
+                                                  $postedData
+                                              )
+                                          )
+                                            ?>">Stack Trace</a>
+                            </td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+        </div>
+
+    <?php } else { ?>
+        <div class="message info empty"><span>
+            <?= $block->escapeHtml(__('grid records are not available.')); ?></span>
+        </div>
+    <?php } ?>
+<?php } ?>

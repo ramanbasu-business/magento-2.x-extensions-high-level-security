@@ -1,0 +1,30 @@
+{
+    "name": "company/plugin",
+    "description": "Magento 2.3 extension for company that synchronizes order, products, inventories etc.",
+    "require": {
+      "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0|~7.3.0||~7.4.0|~8.1.0|~8.2.0|~8.3.0",
+      "magento/framework": "*",
+      "magento/module-ui": "*",
+      "magento/module-config": "*"    
+    },
+    "type": "magento2-module",
+    "version": "7.10.7",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "company\\plugin\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Raman Basu",
+            "email": "raman@company.com",
+            "homepage": "https://www.company.com",
+            "role": "Developer"
+        }
+    ]
+}
