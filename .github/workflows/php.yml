@@ -1,0 +1,22 @@
+name: PHP checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version: ['8.1', '8.2', '8.3']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+      - name: Run authentication tests
+        run: php tests/EncoderTest.php
+      - name: Check PHP syntax
+        run: find src tests -name '*.php' -print0 | xargs -0 -n 1 php -l
