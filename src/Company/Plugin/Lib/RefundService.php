@@ -2,21 +2,10 @@
 
 /*
  * Company Plugin
-
-  NOTICE OF LICENSE
-
-  This source file is subject to the Open Software License (OSL 3.0)
-
-  DISCLAIMER
-
-  Do not edit or add to this file if you wish to upgrade to newer
-  versions in the future. If you wish to customize this extension for your
-  needs please refer to http://www.company.com for more information.
-
-  @author Raman Basu <raman@company.com>
-  @package     Plugin_Imports
-  @copyright   Copyright (C) 2016 Company <support@company.com>
-  @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+ * This file is part of the Company Plugin for Magento.
+ *
+ * @package Company\\Plugin
  */
 
 namespace Company\Plugin\Lib;
@@ -25,13 +14,13 @@ class RefundService extends \Company\Plugin\Lib\CommonService
 {
     protected $orderFactory;
     protected $orderManagement;
-    
+
     /**
      * @var \Magento\Sales\Model\Order\Email\Sender\OrderCommentSender
      */
     protected $orderCommentSender;
     protected $helper;
-    
+
     private $creditmemoManagement;
     private $creditMemoFactory;
     private $invoiceFactory;
@@ -79,12 +68,12 @@ class RefundService extends \Company\Plugin\Lib\CommonService
         $this->invoiceFactory = $invoiceFactory;
         $this->creditmemoManagement = $creditmemoManagement;
         $this->creditMemoFactory = $creditMemoFactory;
-        
+
         // 4.4.0.0
         $this->orderManagement = $orderManagement; // 4.4.0.0
         $this->orderCommentSender = $orderCommentSender;
         $this->helper = $helper;
-        
+
         $this->orderFactory = $orderFactory;
         $this->invoiceModel = $invoiceModel;
 
@@ -136,7 +125,7 @@ class RefundService extends \Company\Plugin\Lib\CommonService
             endforeach;
         endif;
 
-        $this->order = $this->getByID($this->order_increment_id); //getByID
+        $this->order = $this->findOrderByIncrementId($this->order_increment_id);
 
         return true;
     }
@@ -204,19 +193,19 @@ class RefundService extends \Company\Plugin\Lib\CommonService
             $this->addToErrorLog($this->order_increment_id, "Invalid order id: " . $this->order_increment_id);
             return;
         endif;
-        
+
         /** 4.4.0.0
         * If order payment is authorized, payment is in review. we try cancel it
-        * as per https://scms.company.com/common/Ticket.aspx?id=137703
+        * as per internal support reference
         **/
         if (!$this->order->canCreditmemo()):
             if (!$this->order->isPaymentReview()):
                 //$this->message['message'] = 'Cannot create credit memo. Payment is in review';
-                
+
                 $this->setDebugMessage(
                     $this->order_increment_id . ' Cannot create credit memo. Payment is in review'
                 );
-                
+
                 $this->setDebugMessage('Trying to cancel the order.');
 
                 if (!$this->order->canCancel()):
@@ -227,7 +216,7 @@ class RefundService extends \Company\Plugin\Lib\CommonService
                 return;
             endif;
         endif;
-        
+
         if (!$this->validate($refundOrderXml)):
             return;
         endif;
@@ -241,7 +230,7 @@ class RefundService extends \Company\Plugin\Lib\CommonService
                 $creditmemo->setState(\Magento\Sales\Model\Order\Creditmemo::STATE_OPEN);
 
 
-                /** 
+                /**
                 * 6.8.8.0
                 * Check to see last available invoice and set to credit memo
                 * */
@@ -297,7 +286,7 @@ class RefundService extends \Company\Plugin\Lib\CommonService
             // x.6.6.1 floating point comparison between amount to refund and amount available
             /*
             * 6.8.8.0
-            * if (round(floatval($total_amount_to_refund), 2) == round(floatval($order_refundable), 2)): 
+            * if (round(floatval($total_amount_to_refund), 2) == round(floatval($order_refundable), 2)):
             * Since there may be tax included, total_amount_to_refund + tax may equal to
             * order_refundable. So, used '<=''
             */
@@ -310,7 +299,7 @@ class RefundService extends \Company\Plugin\Lib\CommonService
                             ->addStatusHistoryComment("Order has been cancelled")
                             ->setIsCustomerNotified(1);
                     endif;
-                    
+
                     $this->xmlLog
                             ->log(
                                 $this->order_increment_id,
@@ -350,7 +339,7 @@ class RefundService extends \Company\Plugin\Lib\CommonService
                 $back_to_stock = $back_to_stock == 0 ? false : true;
 
                 $orderItemObject = null;
-                
+
                 /** find the order item ID from $order->getAllItems() **/
                 foreach ($order->getAllItems() as $orderItem):
                     if ($orderItem->getSku() === $sku):
@@ -418,7 +407,7 @@ class RefundService extends \Company\Plugin\Lib\CommonService
             foreach ($refundOrderXml->orderitems->orderitem as $orderItemXml):
                 $sku = (string) $orderItemXml['sku'];
                 $qty = isset($orderItemXml['qty']) ? (int) $orderItemXml['qty'] : null;
-                
+
                 $orderItemObject = null;
                 // find the order item ID from $order->getAllItems()
                 foreach ($order->getAllItems() as $orderItem):
@@ -443,11 +432,11 @@ class RefundService extends \Company\Plugin\Lib\CommonService
         $total_amount_to_refund += $this->adjustment_refund + $this->shipping_amount;
         $this->setDebugMessage("adjustment_refund: " . $this->adjustment_refund);
         $this->setDebugMessage("shipping_amount: " . $this->shipping_amount);
-        
+
         return $total_amount_to_refund;
     }
 
-    private function getByID($incrementId)
+    private function findOrderByIncrementId($incrementId)
     {
         $order = $this->orderFactory->create()->loadByIncrementId($incrementId);
 

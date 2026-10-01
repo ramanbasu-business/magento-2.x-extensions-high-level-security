@@ -15,7 +15,7 @@ namespace Company\Plugin\Lib;
  * D:\xampp\htdocs\m211\vendor\magento\module-sales\Model\Order\Payment\Operations\RegisterCaptureNotificationOperation.php
  * D:\xampp\htdocs\m211\vendor\magento\module-sales\Model\Order\Payment.php
  * D:\xampp\htdocs\m211\vendor\magento\module-sales\Controller\Adminhtml\Order\Invoice\Save.php
- * @author raman
+ * @author Company Plugin
  */
 class OrderPaymentCaptureService extends \Company\Plugin\Lib\CommonService
 {
@@ -32,7 +32,7 @@ class OrderPaymentCaptureService extends \Company\Plugin\Lib\CommonService
      * @var InvoiceSender
      */
     private $invoiceSender;
-    
+
     /**
      * @var \Magento\Framework\DB\Transaction
      */
@@ -65,7 +65,7 @@ class OrderPaymentCaptureService extends \Company\Plugin\Lib\CommonService
         if ($feed_xml->getName() === "order"):
             $action = trim((string) $feed_xml->action);
             $order_increment_id = trim((string) $feed_xml->order_increment_id);
-            $order = $this->getByID($order_increment_id);
+            $order = $this->findOrderByIncrementId($order_increment_id);
 
             if ($order == null):
                 $this->addToErrorLog($order_increment_id, "Invalid order id: " . $order_increment_id);
@@ -90,7 +90,7 @@ class OrderPaymentCaptureService extends \Company\Plugin\Lib\CommonService
             foreach ($feed_xml->order as $orderXml):
                 $action = trim((string) $orderXml->action);
                 $order_increment_id = trim((string) $orderXml->order_increment_id);
-                $order = $this->getByID($order_increment_id);
+                $order = $this->findOrderByIncrementId($order_increment_id);
 
                 if ($order == null):
                     $this->addToErrorLog($order_increment_id, "Invalid order id: " . $order_increment_id);
@@ -165,7 +165,7 @@ class OrderPaymentCaptureService extends \Company\Plugin\Lib\CommonService
     private function getCaptureCase($order)
     {
         $CAPTURE_OFFLINE_ONLINE = \Magento\Sales\Model\Order\Invoice::CAPTURE_OFFLINE;
-        
+
         try {
             $paymentModel = $order->getPayment()->getMethodInstance();
             if ($paymentModel) {
@@ -188,7 +188,7 @@ class OrderPaymentCaptureService extends \Company\Plugin\Lib\CommonService
         return $CAPTURE_OFFLINE_ONLINE;
     }
 
-    private function getByID($incrementId)
+    private function findOrderByIncrementId($incrementId)
     {
         $order = $this->orderFactory->create()->loadByIncrementId($incrementId);
 

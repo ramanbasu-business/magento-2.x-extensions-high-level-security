@@ -30,7 +30,7 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 /**
- * @author   "Sebastián Grignoli" <grignoli@gmail.com>
+ * @author Company Plugin
  * @package  Encoding
  * @version  2.0
  * @link     https://github.com/neitanod/forceutf8

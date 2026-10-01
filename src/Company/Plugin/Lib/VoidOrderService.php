@@ -11,7 +11,7 @@ namespace Company\Plugin\Lib;
 /**
  * Description of RefundService
  *
- * @author raman
+ * @author Company Plugin
  */
 class VoidOrderService extends \Company\Plugin\Lib\CommonService
 {

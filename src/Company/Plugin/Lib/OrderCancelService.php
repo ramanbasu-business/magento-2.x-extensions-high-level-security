@@ -11,7 +11,7 @@ namespace Company\Plugin\Lib;
 /**
  * Description of OrderCancelService
  *
- * @author raman
+ * @author Company Plugin
  */
 class OrderCancelService extends \Company\Plugin\Lib\CommonService
 {
@@ -19,13 +19,13 @@ class OrderCancelService extends \Company\Plugin\Lib\CommonService
 
     private $order_increment_id = "";
     protected $orderManagement;
-    
+
     /**
      * @var \Magento\Sales\Model\Order\Email\Sender\OrderCommentSender
      */
     protected $orderCommentSender;
     protected $helper;
-    
+
     public function __construct(
         \Magento\Framework\ObjectManagerInterface $objectManager,
         \Magento\Sales\Api\OrderManagementInterface $orderManagement,
@@ -42,27 +42,27 @@ class OrderCancelService extends \Company\Plugin\Lib\CommonService
 
         parent::__construct($objectManager, $xmlLog, $database);
     }
-    
+
     public function cancelOrder($xmlObject)
     {
         $this->order_increment_id = trim((string) $xmlObject->order_increment_id);
-        $order = $this->getByID($this->order_increment_id);
-        
+        $order = $this->findOrderByIncrementId($this->order_increment_id);
+
         if ($order == null):
             $this->addToErrorLog($this->order_increment_id, "Missing order #" . $this->order_increment_id);
             return;
         endif;
-        
+
         if (!$order->canCancel()):
             $this->addToErrorLog($this->order_increment_id, "Cannot cancel the order " . $this->order_increment_id);
             return;
         endif;
-        
+
         try {
             /** if ($this->orderManagement->cancel($this->order_increment_id)) : **/
             if ($this->orderManagement->cancel($order->getId())):
                 $this->orderCommentSender->send($order, true, "Order has been cancelled");
-            
+
                 $order
                     ->addStatusHistoryComment("Order has been cancelled")
                     ->setIsCustomerNotified(1);
@@ -80,8 +80,8 @@ class OrderCancelService extends \Company\Plugin\Lib\CommonService
             $this->addToErrorLog($this->order_increment_id, "[cancelOrder]" . $ex->getMessage());
         }
     }
-    
-    private function getByID($incrementId)
+
+    private function findOrderByIncrementId($incrementId)
     {
         $order = $this->orderFactory->create()->loadByIncrementId($incrementId);
 

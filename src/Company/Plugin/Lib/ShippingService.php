@@ -2,21 +2,10 @@
 
 /*
  * Company Plugin
-
-  NOTICE OF LICENSE
-
-  This source file is subject to the Open Software License (OSL 3.0)
-
-  DISCLAIMER
-
-  Do not edit or add to this file if you wish to upgrade to newer
-  versions in the future. If you wish to customize this extension for your
-  needs please refer to http://www.company.com for more information.
-
-  @author Raman Basu <raman@company.com>
-  @package     Plugin_Imports
-  @copyright   Copyright (C) 2016 Company <support@company.com>
-  @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+ * This file is part of the Company Plugin for Magento.
+ *
+ * @package Company\\Plugin
  */
 
 namespace Company\Plugin\Lib;
@@ -41,7 +30,7 @@ class ShippingService extends \Company\Plugin\Lib\CommonService
      * @var \Magento\Sales\Model\Service\InvoiceService
      */
     protected $invoiceSender;
-    
+
     /**
      * @var \Magento\Sales\Model\Order\Shipment\TrackFactory
      */
@@ -81,7 +70,7 @@ class ShippingService extends \Company\Plugin\Lib\CommonService
         $this->shipmentSender = $shipmentSender;
 
         $this->searchCriteriaBuilder = $searchCriteriaBuilder;
-        
+
         $this->orderFactory = $orderFactory;
         $this->invoiceService = $invoiceService;
         $this->transaction = $transaction;
@@ -116,10 +105,10 @@ class ShippingService extends \Company\Plugin\Lib\CommonService
             $comment = isset($orderXML->comment) ? (string) $orderXML->comment : null;
             $shipmentDate = isset($orderXML->shipment_date) ?
                     (string) $orderXML->shipment_date : null; //date("Y-m-d H:i:s");
-            
+
             $shippingCost = isset($orderXML->shipping_cost) ? doubleval((string)$orderXML->shipping_cost) : null;
             $taxOnShippingCost = isset($orderXML->shipping_tax) ? doubleval((string)$orderXML->shipping_tax) : null;
-            
+
             /**6.8.7.9 Allow multiple trackings**/
             $trackingsArray = [];
             if(isset($orderXML->trackings)):
@@ -133,7 +122,7 @@ class ShippingService extends \Company\Plugin\Lib\CommonService
             endif;
 
             try {
-                $order = $this->getByID($orderIncrementId);
+                $order = $this->findOrderByIncrementId($orderIncrementId);
 
                 if ($order == null):
                     $this->xmlLog->log($orderIncrementId, "error", "order does not exist");
@@ -148,16 +137,16 @@ class ShippingService extends \Company\Plugin\Lib\CommonService
                 endif;
 
                 $this->setDebugMessage('Processing order: ' . $orderIncrementId);
-                
+
                 // 6.5.2.5
                 if ($shippingCost != null):
                     $this->setDebugMessage(
                         'Updating shipping cost : ' . $shippingCost . ' tax : ' . $taxOnShippingCost
                     );
-                    
+
                     $this->updateShippingCost($order, $shippingCost, $taxOnShippingCost);
                 endif;
-                
+
                 $this->createInvoice($order);
                 $this->completeShipment(
                     $orderXML,
@@ -184,14 +173,14 @@ class ShippingService extends \Company\Plugin\Lib\CommonService
     {
         // Apply Shipping cost
         $order->setShippingAmount($shippingCost)->setBaseShippingAmount($shippingCost);
-        
+
         if ($taxOnShippingCost != null):
             $order->setShippingTaxAmount($taxOnShippingCost)->setBaseShippingTaxAmount($taxOnShippingCost);
         endif;
-        
+
         $order->save();
     }
-    
+
     public function createInvoice(\Magento\Sales\Model\Order $order)
     {
         if (!$order->canInvoice()):
@@ -327,7 +316,7 @@ class ShippingService extends \Company\Plugin\Lib\CommonService
 
                 /** find the order item ID from $order->getAllItems() **/
                 $orderItemObject = null;
-                
+
                 foreach ($order->getAllItems() as $_eachItem):
                     if ($_eachItem->getSku() === $sku):
                         $orderItemObject = $_eachItem;
@@ -356,7 +345,7 @@ class ShippingService extends \Company\Plugin\Lib\CommonService
         if ($comment != ""):
             $this->setDebugMessage('Adding comment to shipment object');
             $shipment->addComment($comment, 1, 1);
-            
+
             $shipment->setCustomerNoteNotify(1);
             $this->setDebugMessage('setCustomerNoteNotify=1 to shipment object');
             $shipment->setCustomerNote($comment);
@@ -466,7 +455,7 @@ class ShippingService extends \Company\Plugin\Lib\CommonService
         endif;
     }
 
-    public function getByID($incrementId)
+    public function findOrderByIncrementId($incrementId)
     {
         $order = $this->orderFactory->create()->loadByIncrementId($incrementId);
 

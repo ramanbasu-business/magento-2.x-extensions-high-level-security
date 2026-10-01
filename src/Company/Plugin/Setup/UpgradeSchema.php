@@ -15,7 +15,7 @@ use Magento\Framework\Setup\SchemaSetupInterface;
 /**
  * Description of UpgradeSchema
  *
- * @author raman
+ * @author Company Plugin
  */
 class UpgradeSchema implements \Magento\Framework\Setup\UpgradeSchemaInterface
 {

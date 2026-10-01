@@ -11,7 +11,7 @@ namespace Company\Plugin\Helper;
 /**
  * Description of Attribute2
  *
- * @author raman
+ * @author Company Plugin
  */
 class Attribute2 extends \Magento\Framework\App\Helper\AbstractHelper
 {

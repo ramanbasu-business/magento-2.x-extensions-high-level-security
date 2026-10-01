@@ -11,20 +11,20 @@ namespace Company\Plugin\Lib;
 /**
  * Description of RefundService
  *
- * @author raman
+ * @author Company Plugin
  */
 class OrderVoidService extends \Company\Plugin\Lib\CommonService
 {
     protected $orderFactory;
     protected $orderManagement;
-    
+
     /**
      * @var \Magento\Sales\Model\Order\Email\Sender\OrderCommentSender
      */
     protected $orderCommentSender;
-    
+
     protected $helper;
-    
+
     private $creditmemoManagement;
     private $creditMemoFactory;
     private $invoiceFactory;
@@ -34,7 +34,7 @@ class OrderVoidService extends \Company\Plugin\Lib\CommonService
      *
      * @var \Magento\Sales\Model\Convert\Order
      */
-    
+
     private $order = null;
     private $order_increment_id = '';
     private $message = [];
@@ -58,7 +58,7 @@ class OrderVoidService extends \Company\Plugin\Lib\CommonService
         $this->orderCommentSender = $orderCommentSender;
         $this->helper = $helper;
         $this->orderFactory = $orderFactory;
-        
+
         parent::__construct($objectManager, $xmlLog, $database);
     }
 
@@ -71,7 +71,7 @@ class OrderVoidService extends \Company\Plugin\Lib\CommonService
     private function init($refundOrderXml)
     {
         $this->order_increment_id = (string) $refundOrderXml->order_increment_id;
-        
+
         if (isset($refundOrderXml->comment_customer_notify)) {
             if ((int) $refundOrderXml->comment_customer_notify == 1) {
                 $this->comment_customer_notify = 1;
@@ -90,7 +90,7 @@ class OrderVoidService extends \Company\Plugin\Lib\CommonService
 
         $this->comment_text = (string) $refundOrderXml->comment_text;
 
-        $this->order = $this->getByID($this->order_increment_id);
+        $this->order = $this->findOrderByIncrementId($this->order_increment_id);
 
         return true;
     }
@@ -105,7 +105,7 @@ class OrderVoidService extends \Company\Plugin\Lib\CommonService
             $this->addToErrorLog($this->order_increment_id, "Invalid order id: " . $this->order_increment_id);
             return;
         endif;
-        
+
         if (!$this->order->canVoidPayment()):
             $this->setDebugMessage($this->order_increment_id . ' Cannot void the order.');
             $this->addToErrorLog($this->order_increment_id, ' Cannot void the order.');
@@ -148,7 +148,7 @@ class OrderVoidService extends \Company\Plugin\Lib\CommonService
         }
     }
 
-    private function getByID($incrementId)
+    private function findOrderByIncrementId($incrementId)
     {
         $order = $this->orderFactory->create()->loadByIncrementId($incrementId);
 

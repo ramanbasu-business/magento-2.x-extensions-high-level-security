@@ -11,7 +11,7 @@ namespace Company\Plugin\Lib;
 /**
  * Description of OrderFieldUpdateService
  *
- * @author raman
+ * @author Company Plugin
  */
 class OrderFieldUpdateService extends \Company\Plugin\Lib\CommonService
 {
@@ -38,16 +38,16 @@ class OrderFieldUpdateService extends \Company\Plugin\Lib\CommonService
         $this->orderCommentSender = $orderCommentSender;
         $this->helper = $helper;
         $this->orderFactory = $orderFactory;
-        
+
         parent::__construct($objectManager, $xmlLog, $database);
     }
 
     public function process($xmlObject)
     {
         $this->order_increment_id = trim((string) $xmlObject->order_increment_id);
-        
-        $order = $this->getByID($this->order_increment_id);
-        
+
+        $order = $this->findOrderByIncrementId($this->order_increment_id);
+
         if ($order == null || empty($order['increment_id'])):
             $this->addToErrorLog($this->order_increment_id, "Missing order #" . $this->order_increment_id);
             return;
@@ -79,23 +79,23 @@ class OrderFieldUpdateService extends \Company\Plugin\Lib\CommonService
             $this->addToErrorLog($this->order_increment_id, $ex->getMessage());
         }
     }
-    
+
     private function updateOrderNote($order, $comment)
     {
         $order->addStatusHistoryComment($comment, false)
                 ->setIsCustomerNotified(false)
                 ->save();
-        
+
         $this->xmlLog->log(
             $this->order_increment_id,
             "success",
             "Note has been added to order history",
             $order->getStatus()
         );
-        
+
         return true;
     }
-    
+
     private function updateOrderStatus($order, $newStatusId)
     {
         $jobStatus = "error";
@@ -149,11 +149,11 @@ class OrderFieldUpdateService extends \Company\Plugin\Lib\CommonService
             $message,
             $order->getStatus()
         );
-        
+
         return true;
     }
 
-    private function getByID($incrementId)
+    private function findOrderByIncrementId($incrementId)
     {
         $order = $this->orderFactory->create()->loadByIncrementId($incrementId);
 

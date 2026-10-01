@@ -2,21 +2,10 @@
 
 /*
  * Company Plugin
-
-  NOTICE OF LICENSE
-
-  This source file is subject to the Open Software License (OSL 3.0)
-
-  DISCLAIMER
-
-  Do not edit or add to this file if you wish to upgrade to newer
-  versions in the future. If you wish to customize this extension for your
-  needs please refer to http://www.company.com for more information.
-
-  @author      Raman Basu <support@company.com>
-  @package     Company/Plugin
-  @copyright   Copyright (C) 2016 Company <support@company.com>
-  @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+ * This file is part of the Company Plugin for Magento.
+ *
+ * @package Company\\Plugin
  */
 
 
@@ -28,14 +17,14 @@ use Magento\Framework\View\Result\PageFactory;
 /**
  * Description of Jobs
  *
- * @author raman
+ * @author Company Plugin
  */
 class Index extends \Magento\Framework\App\Action\Action
 {
     protected $pageFactory;
     protected $coreRegistry;
     protected $encoder;
-    
+
     public function __construct(
         Context $context,
         PageFactory $pageFactory,
@@ -45,14 +34,14 @@ class Index extends \Magento\Framework\App\Action\Action
         $this->pageFactory = $pageFactory;
         $this->coreRegistry = $coreRegistry;
         $this->encoder = $encoder;
-        
+
         return parent::__construct($context);
     }
-    
+
     public function execute()
     {
         $this->coreRegistry->unregister('isAuthenticated');
-        
+
         $post = (array) $this->getRequest()->getPost();
         if (!empty($post)):
             $username   = $post['txtUserName'];
@@ -62,7 +51,7 @@ class Index extends \Magento\Framework\App\Action\Action
                 $this->coreRegistry->register('isAuthenticated', '0');
                 $this->messageManager->addErrorMessage('Invalid login');
             else:
-                if ($this->encoder->dbLogin($username, $password) == true):
+                if ($this->encoder->validateMagentoUserCredentials($username, $password) == true):
                     $this->coreRegistry->register('isAuthenticated', '1');
                 else:
                     $this->coreRegistry->register('isAuthenticated', '0');
@@ -70,10 +59,10 @@ class Index extends \Magento\Framework\App\Action\Action
                 endif;
             endif;
         endif;
-        
+
         $resultPage = $this->pageFactory->create();
         $resultPage->getConfig()->getTitle()->prepend(__('Jobs'));
-        
+
         return $resultPage;
     }
 }
