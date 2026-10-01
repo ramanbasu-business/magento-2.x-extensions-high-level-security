@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<order module="order_payment_capture">
+    <order_increment_id>000000013</order_increment_id>
+    <action>capture_preauthorized_payment</action>
+    <!--<action>status_update</action>-->
+</order>

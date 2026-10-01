@@ -4,13 +4,19 @@
 
 ## What it does
 
-The module exposes frontend routes under `/plugin`.
+The module exposes integration routes under `/plugin`:
 
-- Export controllers provide product, order, inventory/price, category, attribute, customer, shipping-method, option, and CSV data.
-- Import controllers accept XML and dispatch supported work for products, product images and descriptions, product deletion, inventory/price, shipping, refunds, order cancellation/void/payment capture/field updates, and customers.
-- Import requests are stored as rows in Magento's `job` table. Requests can be processed inline or left queued; the authenticated `/plugin/import/cron` controller processes submitted jobs. This repository does not define a Magento `crontab.xml`, so schedule that route externally if automatic queue processing is required.
+### Magento to integration service
+
+Export controllers provide product, order, inventory/price, category, attribute, customer, shipping-method, option, and CSV data for the external integration service to retrieve.
+
+### Integration service to Magento
+
+The service posts XML to the import controllers. Supported jobs include products, product images and descriptions, product deletion, inventory/price, shipping, refunds, order cancellation/void/payment capture/field updates, and customers. Import requests are stored as rows in Magento's `job` table. Requests can be processed inline or left queued; the authenticated `/plugin/import/cron` controller processes submitted jobs. This repository does not define a Magento `crontab.xml`, so schedule that route externally if automatic queue processing is required.
 
 The route names and module values are implementation details, not a complete API contract. The repository does not include a formal XML schema or a full parameter reference. Confirm payload shape and business rules with the integration provider before connecting a production store.
+
+Illustrative XML payloads are available in [`Sample/`](Sample/). Treat them as examples, not production-ready requests.
 
 ## Requirements and compatibility
 
@@ -27,6 +33,7 @@ cp -R /path/to/this/repository/src/Company/Plugin app/code/Company/Plugin
 php bin/magento module:enable Company_Plugin
 php bin/magento setup:upgrade
 php bin/magento cache:flush
+php bin/magento cache:clean
 ```
 
 Run `php bin/magento setup:di:compile` as part of deployment when the store is in production mode. Back up the database before enabling the module; setup creates its job table.

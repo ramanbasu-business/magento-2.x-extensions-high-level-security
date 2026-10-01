@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<products module="invprice">
+
+  <product>
+    <sku>TIER-TEST-2</sku>
+    <qty>1721</qty>
+    <is_in_stock>1</is_in_stock>
+    <manage_stock>1</manage_stock>
+    <backorders>0</backorders>
+    <use_config_backorders>0</use_config_backorders>
+    <price>25</price>
+    <special_price></special_price>
+
+    <tierprices>
+      <tier>
+        <website_id>0</website_id>
+        <cust_group>1</cust_group>
+        <price_qty>10</price_qty>
+        <price>22.00</price>
+      </tier>
+      <tier>
+        <website_id>0</website_id>
+        <cust_group>1</cust_group>
+        <price_qty>20</price_qty>
+        <price>21.00</price>
+      </tier>
+      <tier>
+        <website_id>0</website_id>
+        <cust_group>1</cust_group>
+        <price_qty>30</price_qty>
+        <price>20.00</price>
+      </tier>
+
+
+
+    </tierprices>
+
+  </product>
+
+
+</products>

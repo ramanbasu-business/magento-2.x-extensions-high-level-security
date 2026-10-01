@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<refund module="refund">
+    <order_increment_id>1000477929</order_increment_id>
+    <orderitems>
+        <orderitem sku="FC0012-1" qty="1" back_to_stock="1"></orderitem>
+    </orderitems>
+
+    <comment_text><![CDATA[sample item refund]]></comment_text>
+    <comment_customer_notify>1</comment_customer_notify>
+    <send_email>1</send_email>
+    <shipping_amount>0.00</shipping_amount>
+    <adjustment_refund>0.0</adjustment_refund>
+</refund>

@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<products>
+<product __defaultattributesetname="Default">
+<type>simple</type>
+<sku><![CDATA[SIG213965-TESTSITE]]></sku>
+<upc>085126213657</upc>
+<categories>
+<categoryid>3</categoryid>
+</categories>
+<name><![CDATA[Sigma 14-24mm F2.8 Art DG DN, Mount for Sony E]]></name>
+<description><![CDATA[Sigma 14-24mm F2.8 Art DG DN</span><span style="color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); font-family: Arial;">&nbsp;is a newly-designed lens series made for Leica L-Mount and Sony E-Mount full-frame mirrorless cameras. This wide-angle zoom lens has a fast f/2.8 constant maximum aperture that is ideal for working under varying lighting conditions. It has a series of low dispersion and aspherical elements that minimize both chromatic and spherical aberrations throughout the zoom range, rendering clear, sharp, and color-accurate photos. Its lens elements are coated with a Super Multi-Layer Coating and a NanoPorous Coating (NPC) to help suppress lens flare and ghosting better compared to conventional anti-reflective coatings. This gives you better color accuracy and sharp contrasts in your images under various lighting conditions. It also has a rounded 11-blade diaphragm that helps produce smooth bokeh and comes with a lens hood to protect the front element and help prevent lens flare. ]]></description>
+<short_description><![CDATA[Sigma 14-24mm F2.8 Art DG DN, Mount for Sony E</span><span style="color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); font-family: Arial;">&nbsp;is a newly-designed lens series made for Leica L-Mount and Sony E-Mount full-frame mirrorless cameras. This wide-angle zoom lens has a fast f/2.8 constant maximum aperture that is ideal for working under varying lighting conditions. It has a series of low dispersion and aspherical elements that minimize both chromatic and spherical aberrations throughout the zoom range, rendering clear, sharp, and color-accurate photos.]]></short_description>
+<weight>1</weight>
+<status>1</status>
+<visibility>4</visibility>
+<price>1319</price>
+<special_price></special_price>
+
+
+
+<tax_class_id>0</tax_class_id>
+<meta_title><![CDATA[Buy the Sigma 14-24mm F2.8 Art DG DN, Mount for Sony E - 17 Photo]]></meta_title>
+<meta_keyword><![CDATA[Photography, camera lens]]></meta_keyword>
+<meta_description><![CDATA[Buy the Sigma 14-24mm F2.8 Art DG DN, Mount for Sony E with confidence, 17 Photo offers free shipping and easy returns.The Sigma 14-24mm F2.8 Art DG DN, Mount for Sony E is a newly-designed lens series made for Leica L-Mount and Sony E-Mount full-frame mirrorless cameras]]></meta_description>
+<image  label="" ><![CDATA[https://example.com/images/products/926570.jpg]]></image>
+<thumbnail  label="" ><![CDATA[https://example.com/images/products/926570.jpg]]></thumbnail>
+<small_image  label="" ><![CDATA[https://example.com/images/products/926570.jpg]]></small_image>
+<gallery_image  label="" ><![CDATA[https://example.com/images/products/959095.jpg]]></gallery_image>
+<gallery_image  label="" ><![CDATA[https://example.com/images/products/959096.jpg]]></gallery_image>
+<gallery_image  label="" ><![CDATA[https://example.com/images/products/926571.jpg]]></gallery_image>
+
+<additional_attributes>
+
+ <!--
+ <associativeentity>
+     <key>type_id</key>
+     <value>Misc</value>
+ </associativeentity>
+
+ <associativeentity>
+     <key>status</key>
+     <value>1</value>
+ </associativeentity>
+
+
+ <associativeentity>
+     <key>weight</key>
+     <value>0.00</value>
+ </associativeentity>
+
+-->
+ <associativeentity>
+     <key>msrp_enabled</key>
+     <value>2</value>
+ </associativeentity>
+
+ <associativeentity>
+     <key>msrp_display_actual_price_type</key>
+     <value>4</value>
+ </associativeentity>
+
+
+</additional_attributes>
+<qty>5</qty>
+<is_in_stock>1</is_in_stock>
+<manage_stock>1</manage_stock>
+<min_qty>0</min_qty>
+<min_sale_qty>0</min_sale_qty>
+<max_sale_qty>0</max_sale_qty>
+<backorders>0</backorders>
+<use_config_backorders>0</use_config_backorders>
+<notify_stock_qty>1</notify_stock_qty>
+<use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+</product>
+
+</products>

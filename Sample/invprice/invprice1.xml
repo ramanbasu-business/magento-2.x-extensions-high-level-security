@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<products module="invprice">
+    <product>
+        <sku>bundle-computer-2</sku>
+        <qty>89</qty>
+        <price>9.5000</price>
+        <is_in_stock>1</is_in_stock>
+        <backorders>1</backorders>
+    </product>
+    <product>
+        <sku>URL_KEY_TEST</sku>
+        <qty>142</qty>
+        <price>29.5000</price>
+        <is_in_stock>1</is_in_stock>
+        <backorders>1</backorders>
+    </product>
+    <product>
+        <sku>P2-RED-MEDIUM</sku>
+        <qty>299</qty>
+        <price>18.0000</price>
+        <is_in_stock>1</is_in_stock>
+        <backorders>1</backorders>
+    </product>
+
+</products>

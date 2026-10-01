@@ -1,0 +1,233 @@
+<?xml version="1.0" ?>
+<products>
+    <product __defaultattributesetname="Default"
+    >
+        <type>simple</type>
+        <sku>M_84ARW_BULLS_SHIRT_RED_2T</sku>
+        <name><![CDATA[Chicago Bulls NBA Little Boys Toddlers 3 Stripe T-Shirt, Red (Red, 2T)]]></name>
+        <description><![CDATA[Your little one will be the talk of the game in this shirt.
+<br><br>]]></description>
+        <short_description><![CDATA[Your little one will be the talk of the game in this shirt.]]></short_description>
+        <weight>0</weight>
+        <status>1</status>
+        <visibility>1</visibility>
+        <price>12.99</price>
+        <special_price></special_price>
+
+
+
+        <tax_class_id>0</tax_class_id>
+        <meta_title><![CDATA[]]></meta_title>
+        <meta_keyword><![CDATA[]]></meta_keyword>
+        <meta_description><![CDATA[]]></meta_description>
+
+        <image ><![CDATA[http://localhost/red.jpg]]></image>
+        <thumbnail ><![CDATA[http://localhost/red.jpg]]></thumbnail>
+        <small_image ><![CDATA[http://localhost/red.jpg]]></small_image>
+
+        <additional_attributes>
+            <associativeentity>
+                <key>kids_apparel</key>
+                <value>2t</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>manufacturer</key>
+                <value>Genuine Stuff</value>
+            </associativeentity>
+
+
+        </additional_attributes>
+        <qty>10</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <backorders>0</backorders>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+    </product>
+
+    <product __defaultattributesetname="Default"
+    >
+        <type>simple</type>
+        <sku>M_84ARW_BULLS_SHIRT_RED_3T</sku>
+        <name><![CDATA[Chicago Bulls NBA Little Boys Toddlers 3 Stripe T-Shirt, Red (Red, 3T)]]></name>
+        <description><![CDATA[Your little one will be the talk of the game in this shirt.
+<br><br>]]></description>
+        <short_description><![CDATA[Your little one will be the talk of the game in this shirt.]]></short_description>
+        <weight>0</weight>
+        <status>1</status>
+        <visibility>1</visibility>
+        <price>12.99</price>
+        <special_price></special_price>
+
+
+
+        <tax_class_id>0</tax_class_id>
+        <meta_title><![CDATA[]]></meta_title>
+        <meta_keyword><![CDATA[]]></meta_keyword>
+        <meta_description><![CDATA[]]></meta_description>
+
+        <image ><![CDATA[http://localhost/green.jpg]]></image>
+        <thumbnail ><![CDATA[http://localhost/green.jpg]]></thumbnail>
+        <small_image ><![CDATA[http://localhost/green.jpg]]></small_image>
+
+
+        <additional_attributes>
+            <associativeentity>
+                <key>kids_apparel</key>
+                <value>3t</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>manufacturer</key>
+                <value>Genuine Stuff</value>
+            </associativeentity>
+
+
+        </additional_attributes>
+        <qty>12</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <backorders>0</backorders>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+    </product>
+
+    <product __defaultattributesetname="Default"
+    >
+        <type>simple</type>
+        <sku>M_84ARW_BULLS_SHIRT_RED_4T</sku>
+        <name><![CDATA[Chicago Bulls NBA Little Boys Toddlers 3 Stripe T-Shirt, Red (Red, 4T)]]></name>
+        <description><![CDATA[Your little one will be the talk of the game in this shirt.
+<br><br>]]></description>
+        <short_description><![CDATA[Your little one will be the talk of the game in this shirt.]]></short_description>
+        <weight>0</weight>
+        <status>1</status>
+        <visibility>1</visibility>
+        <price>12.99</price>
+        <special_price></special_price>
+
+
+
+        <tax_class_id>0</tax_class_id>
+        <meta_title><![CDATA[]]></meta_title>
+        <meta_keyword><![CDATA[]]></meta_keyword>
+        <meta_description><![CDATA[]]></meta_description>
+
+        <image ><![CDATA[http://localhost/blue.jpg]]></image>
+        <thumbnail ><![CDATA[http://localhost/blue.jpg]]></thumbnail>
+        <small_image ><![CDATA[http://localhost/blue.jpg]]></small_image>
+
+        <additional_attributes>
+            <associativeentity>
+                <key>kids_apparel</key>
+                <value>4t</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>manufacturer</key>
+                <value>Genuine Stuff</value>
+            </associativeentity>
+
+
+        </additional_attributes>
+        <qty>9</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <backorders>0</backorders>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+    </product>
+
+    <product __defaultattributesetname="Default"
+             __configattr="kids_apparel"
+             __childsku="M_84ARW_BULLS_SHIRT_RED_2T,M_84ARW_BULLS_SHIRT_RED_3T,M_84ARW_BULLS_SHIRT_RED_4T" >
+        <type>configurable</type>
+        <sku>MAGENTO_ 84ARW_BULLS</sku>
+        <categories>
+            <categoryid>1</categoryid>
+            <categoryid>2</categoryid>
+        </categories>
+        <name><![CDATA[NBA Toddlers Chicago Bulls T-Shirt]]></name>
+        <description><![CDATA[<p><span style="font-size: 18px; font-family: Georgia;">Get your little one ready to cheer on his favorite team with this shirt. They will be the talk of the game! Toddler sizing. </span></p>
+<p><span style="font-size: 18px; font-family: Georgia;">&nbsp;</span></p>
+<ul class="a-vertical a-spacing-none">
+    <li><span class="a-list-item" style="font-size: 18px; font-family: Georgia;"> 100% cotton</span></li>
+    <li><span class="a-list-item" style="font-size: 18px; font-family: Georgia;"> Embroidered team logo on front chest</span></li>
+    <li><span class="a-list-item" style="font-size: 18px; font-family: Georgia;"> Blank on back</span></li>
+    <li><span class="a-list-item" style="font-size: 18px; font-family: Georgia;"> Short sleeve</span></li>
+    <li><span class="a-list-item" style="font-size: 18px; font-family: Georgia;"> Officially licensed by the NBA</span></li>
+</ul>
+<p ><br />
+<br />
+</p>]]></description>
+        <short_description><![CDATA[Your little one will be the talk of the game in this shirt.]]></short_description>
+        <weight>1</weight>
+        <status>1</status>
+        <visibility>1</visibility>
+        <price>12.99</price>
+        <special_price></special_price>
+
+
+
+        <tax_class_id>0</tax_class_id>
+        <meta_title><![CDATA[]]></meta_title>
+        <meta_keyword><![CDATA[]]></meta_keyword>
+        <meta_description><![CDATA[]]></meta_description>
+        <image ><![CDATA[http://localhost/redgreenblue.png]]></image>
+        <thumbnail ><![CDATA[http://localhost/redgreenblue.png]]></thumbnail>
+        <small_image ><![CDATA[http://localhost/redgreenblue.png]]></small_image>
+        <gallery_image ><![CDATA[http://localhost/redgreenblue.png]]></gallery_image>
+
+        <additional_attributes>
+            <associativeentity>
+                <key>manufacturer</key>
+                <value>Genuine Stuff</value>
+            </associativeentity>
+
+
+        </additional_attributes>
+        <super_attributes>
+            <super_attribute>
+                <code>kids_apparel</code>
+                <label>3t</label>
+                <price_change>0.00</price_change>
+            </super_attribute>
+            <super_attribute>
+                <code>kids_apparel</code>
+                <label>2t</label>
+                <price_change>0.00</price_change>
+            </super_attribute>
+            <super_attribute>
+                <code>kids_apparel</code>
+                <label>4t</label>
+                <price_change>0.00</price_change>
+            </super_attribute>
+
+        </super_attributes>
+        <qty>0</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>0</manage_stock>
+        <use_config_manage_stock>0</use_config_manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <backorders>0</backorders>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+    </product>
+
+</products>

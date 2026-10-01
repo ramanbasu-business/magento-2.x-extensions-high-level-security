@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<orders module="shipping">
+
+<order>
+                            <orderid>004665326</orderid>
+                            <carrier_code><![CDATA[ups]]></carrier_code>
+                            <title><![CDATA[UPS 2nd Day Air]]></title>
+                            <number>1Z6TT8890296659376</number>
+                            <comment></comment>
+                            <shipment_date>2022-01-18 13:27:25</shipment_date>
+
+<orderitems>
+
+                                        <orderitem sku="GF-PLB" qty="1"></orderitem>
+
+</orderitems>
+                                </order>
+    <order>
+        <orderid>000000013</orderid>
+        <carrier_code>UPS</carrier_code>
+        <title>UPS Ground</title>
+        <number>33333</number>
+        <comment>Shipment comment from XML</comment>
+        <shipment_date>2020-10-15 12:24:20</shipment_date>
+        <orderitems>
+
+        </orderitems>
+    </order>
+
+</orders>

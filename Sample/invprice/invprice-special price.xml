@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<products module="invprice">
+
+    <product>
+        <sku>TEST_PRODUCT</sku>
+        <qty>0</qty>
+        <is_in_stock>1</is_in_stock>
+        <backorders>1</backorders>
+        <additional_attributes>
+            <associativeentity>
+                <key>promotion</key>
+                <value>No</value>
+            </associativeentity>
+        </additional_attributes>
+    </product>
+    <product>
+        <sku>TEST1</sku>
+        <qty>100</qty>
+        <price>200.00</price>
+        <special_price>1,000.00</special_price>
+        <special_from_date>2014-01-01</special_from_date>
+    </product>
+    <product>
+        <sku>TEST_Red_Blue_Large_Madium</sku>
+        <special_price>4.00</special_price>
+        <special_from_date>2014-01-01</special_from_date>
+    </product>
+    <product>
+        <sku>MSPOCKETPECRES42.5-15-WH/BK/YL</sku>
+        <websiteids>1</websiteids>
+        <qty>10</qty>
+        <is_in_stock>1</is_in_stock>
+        <backorders>0</backorders>
+        <use_config_backorders>0</use_config_backorders>
+    </product>
+</products>

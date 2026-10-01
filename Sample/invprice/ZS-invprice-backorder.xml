@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<products module="invprice">
+<product>
+<sku>SRC6WNF</sku>
+<websiteids>2</websiteids>
+<qty>0</qty>
+<is_in_stock>1</is_in_stock>
+<backorders>0</backorders>
+<use_config_backorders>0</use_config_backorders>
+</product>
+</products>

@@ -1,0 +1,59 @@
+EXAMPLE ORDER:
+========================
+Order items:
+$10.00 x 1
+$2.00 x 1
+Total: $12.00,
+Shipping: $10.00.
+Total Tax applied: $1.95 @8.85%
+TOTAL PAID: $23.95
+---------------------------------
+Case A - shipping refund only: Shipping refund: $1.00
+
+Request:
+<refund module="refund">
+    <order_increment_id>000000015</order_increment_id>
+    <comment_text><![CDATA[refund 1.0]]></comment_text>
+    <comment_customer_notify>1</comment_customer_notify>
+    <send_email>0</send_email>
+    <shipping_amount>1.00</shipping_amount>
+    <adjustment_refund>0.00</adjustment_refund>
+</refund>
+
+Result: $1.00 + $0.09(proportionate tax) = $1.09 was refunded.
+
+--------------------------------
+Case B: adj refund on the above order:
+Adj. refund: $2.00
+
+Request:
+<refund module="refund">
+    <order_increment_id>000000015</order_increment_id>
+    <comment_text><![CDATA[refund - adj 2.00 only]]></comment_text>
+    <comment_customer_notify>1</comment_customer_notify>
+    <send_email>0</send_email>
+    <shipping_amount>0.00</shipping_amount>
+    <adjustment_refund>2.00</adjustment_refund>
+</refund>
+Result: $2.00 was refunded.
+-------------------------------
+
+Case C: Return all items without shipping on the above order:
+<refund module="refund">
+    <order_increment_id>000000015</order_increment_id>
+    <orderitems>
+        <orderitem sku="test003" qty="1" back_to_stock="1"></orderitem>
+        <orderitem sku="stepcraft_M1000" qty="1" back_to_stock="1"></orderitem>
+    </orderitems>
+    <comment_text><![CDATA[sample item refund]]></comment_text>
+    <comment_customer_notify>1</comment_customer_notify>
+    <send_email>1</send_email>
+    <shipping_amount>0.00</shipping_amount>
+    <adjustment_refund>0.0</adjustment_refund>
+</refund>
+Result: $12.00 + $1.06(proportionate tax) = $13.06 was refunded.
+=============================
+
+Case D: Money available to refund: ($1.09 + $2.0 + $13.06) = $7.80
+Because while refunding shipping and items, tax was already refunded alongwith. If we try to refund due shipping of $9.00 or $7.00, magento will try to include prop. tax, too. So, amount requested will be much more than it took.
+To close this order, we can refund via adjustment only.

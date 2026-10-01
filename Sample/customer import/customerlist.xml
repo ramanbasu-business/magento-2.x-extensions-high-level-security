@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers module="customer">
+  <customer>
+    <entity_id>1</entity_id>
+    <website_id>1</website_id>
+    <email>customer1@example.com</email>
+    <group_id>1</group_id>
+    <store_id>1</store_id>
+    <created_at>2019-11-13 16:04:51</created_at>
+    <updated_at>2020-06-03 07:02:41</updated_at>
+    <is_active>1</is_active>
+    <disable_auto_group_change>0</disable_auto_group_change>
+    <prefix/>
+    <firstname>Sample</firstname>
+    <middlename>One</middlename>
+    <lastname>Customer</lastname>
+    <suffix/>
+    <dob/>
+    <gender>1</gender>
+
+    <billing_address>
+      <firstname><![CDATA[Sample]]></firstname>
+      <middlename>One</middlename>
+      <lastname><![CDATA[Customer]]></lastname>
+      <street><![CDATA[123 Example Street]]></street>
+      <city><![CDATA[Example City]]></city>
+      <region>CA</region>
+      <postcode>90000</postcode>
+      <country_id>US</country_id>
+    </billing_address>
+
+    <shipping_address>
+      <firstname><![CDATA[Sample]]></firstname>
+      <middlename/>
+      <lastname><![CDATA[Customer]]></lastname>
+      <street><![CDATA[123 Example Street]]></street>
+      <city><![CDATA[Example City]]></city>
+      <region>CA</region>
+      <postcode>90000</postcode>
+      <country_id>US</country_id>
+    </shipping_address>
+  </customer>
+
+
+  <customer>
+    <entity_id>2</entity_id>
+    <website_id>1</website_id>
+    <email>customer2@example.com</email>
+    <group_id>1</group_id>
+    <store_id>1</store_id>
+    <created_at>2020-02-21 06:12:14</created_at>
+    <updated_at>2020-02-21 06:12:57</updated_at>
+    <is_active>1</is_active>
+    <disable_auto_group_change>0</disable_auto_group_change>
+    <prefix/>
+    <firstname>Sample</firstname>
+    <middlename/>
+    <lastname>Customer</lastname>
+    <suffix/>
+    <dob/>
+    <gender/>
+    <billing_address>
+      <firstname><![CDATA[Sample]]></firstname>
+      <middlename/>
+      <lastname><![CDATA[Customer]]></lastname>
+      <street><![CDATA[456 Example Avenue]]></street>
+      <city><![CDATA[Example City]]></city>
+      <region>CA</region>
+      <postcode>90001</postcode>
+      <country_id>US</country_id>
+    </billing_address>
+    <shipping_address>
+      <firstname><![CDATA[Sample]]></firstname>
+      <middlename/>
+      <lastname><![CDATA[Customer]]></lastname>
+      <street><![CDATA[456 Example Avenue]]></street>
+      <city><![CDATA[Example City]]></city>
+      <region>CA</region>
+      <postcode>90001</postcode>
+      <country_id>US</country_id>
+    </shipping_address>
+  </customer>
+  <customer>
+    <entity_id>3</entity_id>
+    <website_id>1</website_id>
+    <email>customer3@example.com</email>
+    <group_id>1</group_id>
+    <store_id>1</store_id>
+    <created_at>2020-03-17 06:06:36</created_at>
+    <updated_at>2020-03-17 06:08:29</updated_at>
+    <is_active>1</is_active>
+    <disable_auto_group_change>0</disable_auto_group_change>
+    <prefix/>
+    <firstname>Sample</firstname>
+    <middlename/>
+    <lastname>Customer</lastname>
+    <suffix/>
+    <dob/>
+    <gender/>
+    <billing_address>
+      <firstname><![CDATA[Sample]]></firstname>
+      <middlename/>
+      <lastname><![CDATA[Customer]]></lastname>
+      <street><![CDATA[789 Example Road]]></street>
+      <city><![CDATA[Example City]]></city>
+      <region>WA</region>
+      <postcode>98000</postcode>
+      <country_id>US</country_id>
+    </billing_address>
+    <shipping_address>
+      <firstname><![CDATA[Sample]]></firstname>
+      <middlename/>
+      <lastname><![CDATA[Customer]]></lastname>
+      <street><![CDATA[789 Example Road]]></street>
+      <city><![CDATA[Example City]]></city>
+      <region>WA</region>
+      <postcode>98000</postcode>
+      <country_id>US</country_id>
+    </shipping_address>
+  </customer>
+</customers>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<orders module="shipping">
+    <order>
+        <orderid>000000002</orderid>
+        <carrier_code>free</carrier_code>
+        <title>Free Shipping</title>
+        <number>000000009</number>
+        <comment></comment>
+        <shipment_date>2021-12-07 07:56:23</shipment_date>
+        <orderitems>
+            <orderitem sku="URL_KEY_TEST" qty="1"></orderitem>
+        </orderitems>
+    </order>
+
+</orders>

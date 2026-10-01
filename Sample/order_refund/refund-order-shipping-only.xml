@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<refund module="refund">
+    <order_increment_id>000000002</order_increment_id>
+    <!--<orderitems>
+        <orderitem sku="TESTME" qty="1" back_to_stock="1"></orderitem>
+    </orderitems>-->
+    <comment_text><![CDATA[refund 1.0]]></comment_text>
+    <comment_customer_notify>1</comment_customer_notify>
+    <send_email>0</send_email>
+    <shipping_amount>1.00</shipping_amount>
+    <adjustment_refund>0.00</adjustment_refund>
+</refund>

@@ -1,0 +1,7 @@
+GET /plugin/import/orderstatus?orderid=000000021&status=hold HTTP/1.1
+Host: store.example.com
+Authorization: Basic <base64-encoded-integration-credentials>
+
+GET /plugin/import/orderstatus?orderid=000000021&status=unhold HTTP/1.1
+Host: store.example.com
+Authorization: Basic <base64-encoded-integration-credentials>

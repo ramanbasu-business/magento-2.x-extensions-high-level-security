@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<products module="images">
+
+  <product __defaultattributesetname="Default">
+    <type>simple</type>
+    <sku>URL_KEY_TEST</sku>
+    <image><![CDATA[http://www.clker.com/cliparts/U/q/P/u/e/Q/number-3-blue-background-md.png]]></image>
+    <thumbnail><![CDATA[http://www.clker.com/cliparts/U/q/P/u/e/Q/number-3-blue-background-md.png]]></thumbnail>
+    <small_image><![CDATA[http://www.clker.com/cliparts/U/q/P/u/e/Q/number-3-blue-background-md.png]]></small_image>
+    <gallery_image ><![CDATA[http://www.clker.com/cliparts/U/q/P/u/e/Q/number-3-blue-background-md.png]]></gallery_image>
+  </product>
+
+  <product __defaultattributesetname="Default">
+    <type>simple</type>
+    <sku>P2</sku>
+    <image><![CDATA[https://image.shutterstock.com/image-photo/small-box-color-pencils-mock-260nw-1095623522.jpg]]></image>
+    <thumbnail><![CDATA[https://image.shutterstock.com/image-photo/small-box-color-pencils-mock-260nw-1095623522.jpg]]></thumbnail>
+    <small_image><![CDATA[https://thumbs.dreamstime.com/z/siingle-orange-crayon-isolated-white-20107314.jpg]]></small_image>
+    <gallery_image ><![CDATA[http://www.localhost.com/images/black.jpg]]></gallery_image>
+  </product>
+
+</products>

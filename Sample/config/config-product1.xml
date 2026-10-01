@@ -1,0 +1,422 @@
+<?xml version="1.0" ?>
+<products>
+    <product __defaultattributesetname="Kids Clothing"
+    >
+        <type>simple</type>
+        <sku>EM-141-BLK-X2</sku>
+        <upc>641061724483</upc>
+        <name><![CDATA[Eero Saarinen Style Organic Chair in Black (Set of 2)]]></name>
+        <description><![CDATA[The ultimate in plush decor, the Barclay Dining Chair features a supportive high back and arms made of a finely upholstered patterned twill fabric. Underneath, a sculpted ABS Seat cushioned with foam padding provides added support for an extremely comfortable seating experience.]]></description>
+        <short_description><![CDATA[Supportive high back and arms
+Solid wood legs
+Sculpted Wood frame
+Foam padding for comfort
+Durable Patterned Twill Fabric
+Finely upholstered fabric
+Minimal Assembly required
+Chair weight capacity - 310 lbs.
+Extremely Comfortable
+]]></short_description>
+        <weight>0</weight>
+        <status>1</status>
+        <visibility>1</visibility>
+        <price>249</price>
+        <special_price></special_price>
+        <tax_class_id>0</tax_class_id>
+        <meta_title><![CDATA[]]></meta_title>
+        <meta_keyword><![CDATA[]]></meta_keyword>
+        <meta_description><![CDATA[]]></meta_description>
+
+        <additional_attributes>
+            <associativeentity>
+                <key>color</key>
+                <value>Black</value>
+            </associativeentity>
+            <associativeentity>
+                <key>color</key>
+                <value></value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>productlayout</key>
+                <value></value>
+            </associativeentity>
+        </additional_attributes>
+
+        <qty>42</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <backorders>0</backorders>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+        <group_skus>
+            <group_sku>
+                <sku><![CDATA[EM-141-BLK]]></sku>
+                <default_qty>2</default_qty>
+            </group_sku>
+        </group_skus>
+    </product>
+
+    <product __defaultattributesetname="Kids Clothing"
+    >
+        <type>simple</type>
+        <sku>EM-141-LGR-X2</sku>
+        <upc>616806868517</upc>
+        <name><![CDATA[Eero Saarinen Style Organic Chair in Light Grey (Set of 2)]]></name>
+        <description><![CDATA[The ultimate in plush decor, the Barclay Dining Chair features a supportive high back and arms made of a finely upholstered patterned twill fabric. Underneath, a sculpted ABS Seat cushioned with foam padding provides added support for an extremely comfortable seating experience.]]></description>
+        <short_description><![CDATA[Supportive high back and arms
+Solid wood legs
+Sculpted Wood frame
+Foam padding for comfort
+Durable Patterned Twill Fabric
+Finely upholstered fabric
+Minimal Assembly required
+Chair weight capacity - 310 lbs.
+Extremely Comfortable
+]]></short_description>
+        <weight>0</weight>
+        <status>1</status>
+        <visibility>1</visibility>
+        <price>249</price>
+        <special_price></special_price>
+
+
+
+        <tax_class_id>0</tax_class_id>
+        <meta_title><![CDATA[]]></meta_title>
+        <meta_keyword><![CDATA[]]></meta_keyword>
+        <meta_description><![CDATA[]]></meta_description>
+
+        <additional_attributes>
+            <associativeentity>
+                <key>color</key>
+                <value>Light Grey</value>
+            </associativeentity>
+            <associativeentity>
+                <key>color</key>
+                <value></value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>productlayout</key>
+                <value></value>
+            </associativeentity>
+        </additional_attributes>
+
+        <qty>65</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <backorders>0</backorders>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+        <group_skus>
+            <group_sku>
+                <sku><![CDATA[EM-141-LGR]]></sku>
+                <default_qty>2</default_qty>
+            </group_sku>
+        </group_skus>
+    </product>
+
+    <product __defaultattributesetname="Kids Clothing"
+    >
+        <type>simple</type>
+        <sku>EM-141-ORA-X2</sku>
+        <upc>641061724490</upc>
+        <name><![CDATA[Eero Saarinen Style Organic Chair in Orange (Set of 2)]]></name>
+        <description><![CDATA[The ultimate in plush decor, the Barclay Dining Chair features a supportive high back and arms made of a finely upholstered patterned twill fabric. Underneath, a sculpted ABS Seat cushioned with foam padding provides added support for an extremely comfortable seating experience.]]></description>
+        <short_description><![CDATA[Supportive high back and arms
+Solid wood legs
+Sculpted Wood frame
+Foam padding for comfort
+Durable Patterned Twill Fabric
+Finely upholstered fabric
+Minimal Assembly required
+Chair weight capacity - 310 lbs.
+Extremely Comfortable
+]]></short_description>
+        <weight>0</weight>
+        <status>1</status>
+        <visibility>1</visibility>
+        <price>249</price>
+        <special_price></special_price>
+
+
+
+        <tax_class_id>0</tax_class_id>
+        <meta_title><![CDATA[]]></meta_title>
+        <meta_keyword><![CDATA[]]></meta_keyword>
+        <meta_description><![CDATA[]]></meta_description>
+
+        <additional_attributes>
+            <associativeentity>
+                <key>color</key>
+                <value>Orange</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>color</key>
+                <value></value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>productlayout</key>
+                <value></value>
+            </associativeentity>
+
+        </additional_attributes>
+
+        <qty>14</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <backorders>0</backorders>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+        <group_skus>
+            <group_sku>
+                <sku><![CDATA[EM-141-ORA]]></sku>
+                <default_qty>2</default_qty>
+            </group_sku>
+        </group_skus>
+    </product>
+
+    <product __defaultattributesetname="Kids Clothing"
+    >
+        <type>simple</type>
+        <sku>EM-141-RED-X2</sku>
+        <upc>641061724506</upc>
+        <name><![CDATA[Eero Saarinen Style Organic Chair in Red (Set of 2)]]></name>
+        <description><![CDATA[The ultimate in plush decor, the Barclay Dining Chair features a supportive high back and arms made of a finely upholstered patterned twill fabric. Underneath, a sculpted ABS Seat cushioned with foam padding provides added support for an extremely comfortable seating experience.]]></description>
+        <short_description><![CDATA[Supportive high back and arms
+Solid wood legs
+Sculpted Wood frame
+Foam padding for comfort
+Durable Patterned Twill Fabric
+Finely upholstered fabric
+Minimal Assembly required
+Chair weight capacity - 310 lbs.
+Extremely Comfortable
+]]></short_description>
+        <weight>0</weight>
+        <status>1</status>
+        <visibility>1</visibility>
+        <price>249</price>
+        <special_price></special_price>
+
+
+
+        <tax_class_id>0</tax_class_id>
+        <meta_title><![CDATA[]]></meta_title>
+        <meta_keyword><![CDATA[]]></meta_keyword>
+        <meta_description><![CDATA[]]></meta_description>
+
+        <additional_attributes>
+            <associativeentity>
+                <key>color</key>
+                <value>Red</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>color</key>
+                <value></value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>productlayout</key>
+                <value></value>
+            </associativeentity>
+
+        </additional_attributes>
+        <qty>18</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <backorders>0</backorders>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+        <group_skus>
+            <group_sku>
+                <sku><![CDATA[EM-141-RED]]></sku>
+                <default_qty>2</default_qty>
+            </group_sku>
+        </group_skus>
+    </product>
+
+    <product __defaultattributesetname="Kids Clothing"
+    >
+        <type>simple</type>
+        <sku>EM-141-TAU-X2</sku>
+        <upc>616806868487</upc>
+        <name><![CDATA[Eero Saarinen Style Organic Chair in Taupe (Set of 2)]]></name>
+        <description><![CDATA[<p>The Organic Chair was designed in 1940 for the New York Museum of Modern Art's "Organic Design in Home Furnishings" competition. Technically advanced, the impressive seat was not put into series production until after 1950, when technology had matured enough to manufacture larger quantities of the organically shaped seat shells. Eero S. designed the sought-after Organic Chair in conjunction with Charles E., combining the creative design vision and talent of two of the most significant designers of the 20th century.</p>
+<p>
+Poly &amp; Bark produces the Organic Chair in a hand-formed shell upholstered with quality twill fabric in various colors.</p>
+<p>Included: 2 Chairs</p>]]></description>
+        <short_description><![CDATA[Supportive high back and arms
+Solid wood legs
+Sculpted Wood frame
+Foam padding for comfort
+Durable Patterned Twill Fabric
+Finely upholstered fabric
+Minimal Assembly required
+Chair weight capacity - 310 lbs.
+Extremely Comfortable
+]]></short_description>
+        <weight>40</weight>
+        <status>1</status>
+        <visibility>1</visibility>
+        <price>249</price>
+        <special_price>249.00</special_price>
+
+
+
+        <tax_class_id>0</tax_class_id>
+        <meta_title><![CDATA[]]></meta_title>
+        <meta_keyword><![CDATA[]]></meta_keyword>
+        <meta_description><![CDATA[]]></meta_description>
+
+        <additional_attributes>
+            <associativeentity>
+                <key>color</key>
+                <value>Taupe</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>color</key>
+                <value></value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>productlayout</key>
+                <value></value>
+            </associativeentity>
+
+        </additional_attributes>
+        <qty>62</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <backorders>0</backorders>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+        <group_skus>
+            <group_sku>
+                <sku><![CDATA[EM-141-TAU]]></sku>
+                <default_qty>2</default_qty>
+            </group_sku>
+        </group_skus>
+    </product>
+
+    <product __defaultattributesetname="Kids Clothing"
+         __configattr="color"
+         __childsku="EM-141-BLK-X2,EM-141-LGR-X2,EM-141-ORA-X2,EM-141-RED-X2,EM-141-TAU-X2" >
+        <type>configurable</type>
+        <sku>EM-141-X2</sku>
+        <categories>
+            <categoryid>7</categoryid>
+            <categoryid>15</categoryid>
+            <categoryid>35</categoryid>
+            <categoryid>40</categoryid>
+        </categories>
+        <name><![CDATA[Eero Saarinen Style Organic Chair (Set of 2)]]></name>
+        <description><![CDATA[<p>The Organic Chair was designed in 1940 for the New York Museum of Modern Art's "Organic Design in Home Furnishings" competition. Technically advanced, the impressive seat was not put into series production until after 1950, when technology had matured enough to manufacture larger quantities of the organically shaped seat shells. Eero S. designed the sought-after Organic Chair in conjunction with Charles E., combining the creative design vision and talent of two of the most significant designers of the 20th century.<br />
+<br />
+Poly &amp; Bark produces the Organic Chair in a hand-formed shell upholstered with quality twill fabric in various colors.&nbsp;</p>
+<p>Included: 2 Chairs</p>]]></description>
+        <short_description><![CDATA[Set of 2 Chairs
+Supportive high back and arms
+Solid wood legs
+Sculpted Wood frame
+Foam padding for comfort
+Durable Patterned Twill Fabric
+Finely upholstered fabric
+Minimal Assembly required
+Chair weight capacity - 310 lbs.
+Extremely Comfortable&nbsp;]]></short_description>
+        <weight>40</weight>
+        <status>1</status>
+        <visibility>3</visibility>
+        <price>296</price>
+        <special_price>249.00</special_price>
+
+
+
+        <tax_class_id>2</tax_class_id>
+        <meta_title><![CDATA[]]></meta_title>
+        <meta_keyword><![CDATA[]]></meta_keyword>
+        <meta_description><![CDATA[]]></meta_description>
+        <image ><![CDATA[https://example.com/images/products/EM-141-X2/32f84573-8202-4fcf-835b-67a95420d6fc.jpg]]></image>
+        <thumbnail ><![CDATA[https://example.com/images/products/EM-141-X2/d536d3a5-6137-4f1c-ac38-9f0ed73ac72a.jpg]]></thumbnail>
+        <small_image ><![CDATA[https://example.com/images/products/EM-141-X2/32f84573-8202-4fcf-835b-67a95420d6fc.jpg]]></small_image>
+
+        <additional_attributes>
+            <associativeentity>
+                <key>color</key>
+                <value></value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>productlayout</key>
+                <value></value>
+            </associativeentity>
+
+        </additional_attributes>
+
+        <super_attributes>
+            <super_attribute>
+                <code>color</code>
+                <label>Taupe</label>
+                <price_change>-47</price_change>
+            </super_attribute>
+            <super_attribute>
+                <code>color</code>
+                <label>Light Grey</label>
+                <price_change>-47</price_change>
+            </super_attribute>
+            <super_attribute>
+                <code>color</code>
+                <label>Black</label>
+                <price_change>-47</price_change>
+            </super_attribute>
+            <super_attribute>
+                <code>color</code>
+                <label>Orange</label>
+                <price_change>-47</price_change>
+            </super_attribute>
+            <super_attribute>
+                <code>color</code>
+                <label>Red</label>
+                <price_change>-47</price_change>
+            </super_attribute>
+
+        </super_attributes>
+        <qty>0</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <backorders>0</backorders>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+    </product>
+
+</products>

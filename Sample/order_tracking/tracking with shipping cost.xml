@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<orders module="shipping">
+    <order>
+        <orderid>000000002</orderid>
+        <carrier_code>usps</carrier_code>
+        <title>USPS Priority</title>
+        <number>000000001-TRK</number>
+        <comment>Shipment comment from XML</comment>
+        <shipment_date>2019-08-20 18:56:23</shipment_date>
+
+
+        <shipping_cost>5.00</shipping_cost> <!-- optional upadte -->
+        <shipping_tax>1.00</shipping_tax> <!-- optional upadte -->
+
+    </order>
+</orders>

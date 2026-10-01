@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<products>
+  <product __defaultattributesetname="Default">
+    <type>simple</type>
+    <sku>URL_KEY_TEST</sku>
+
+    <categories>
+      <categoryid>2</categoryid>
+      <categoryid>4</categoryid>
+    </categories>
+
+    <name><![CDATA[New Sterling Silver Venetian Box Chain (1.5mm)]]></name>
+    <description><![CDATA[ (New Made in Italy, this stylish sterling silver box chain is an essential staple in any jewelry collection. Ideal for showcasing your favorite pendants and lovely when worn alone or layered with other chains. Measures 1.5 mm wide.]]></description>
+    <short_description><![CDATA[New <ul><li>Box Chain<li>925 Sterling Silver<li>Made in Italy<li>1.5 mm Wide<li>Secures with a Lobster Claw Clasp</ul>]]></short_description>
+    <weight>10</weight>
+    <status>1</status>
+    <visibility>4</visibility>
+    <price>29.99</price>
+
+    <tax_class_id>0</tax_class_id>
+    <meta_title><![CDATA[Roberto Martinez | Sterling Silver Venetian Box Chain (1.5 mm)]]></meta_title>
+    <meta_keyword><![CDATA[sterling silver,pendant chain,chain,italian craftsmanship,basic jewelry piece]]></meta_keyword>
+    <meta_description><![CDATA[]]></meta_description>
+    <image><![CDATA[http://www.clker.com/cliparts/U/q/P/u/e/Q/number-3-blue-background-md.png]]></image>
+    <thumbnail><![CDATA[http://www.clker.com/cliparts/U/q/P/u/e/Q/number-3-blue-background-md.png]]></thumbnail>
+    <small_image><![CDATA[http://www.clker.com/cliparts/U/q/P/u/e/Q/number-3-blue-background-md.png]]></small_image>
+    <gallery_image ><![CDATA[http://www.clker.com/cliparts/U/q/P/u/e/Q/number-3-blue-background-md.png]]></gallery_image>
+
+    <additional_attributes>
+
+      <associativeentity>
+        <key>multi_color</key>
+        <value>Red, Blue</value>
+        <type>multiselect</type>
+      </associativeentity>
+
+      <associativeentity>
+        <key>country_of_manufacture</key>
+        <value>United States of America</value>
+      </associativeentity>
+
+
+      <!--<associativeentity>
+                <key>dimensions_unit</key>
+                <value>in</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>metal</key>
+                <value>sterling silver</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>metal_stamp</key>
+                <value>0.925</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>metal_type</key>
+                <value>sterling-silver</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>msrp</key>
+                <value>36</value>
+            </associativeentity>
+
+            <associativeentity>
+                <key>manufacturer</key>
+                <value>None</value>
+            </associativeentity>-->
+
+
+    </additional_attributes>
+    <qty>43</qty>
+    <is_in_stock>1</is_in_stock>
+    <manage_stock>1</manage_stock>
+    <min_qty>0</min_qty>
+    <min_sale_qty>0</min_sale_qty>
+    <max_sale_qty>0</max_sale_qty>
+    <use_config_backorders>true</use_config_backorders>
+    <notify_stock_qty>1</notify_stock_qty>
+    <use_config_notify_stock_qty>true</use_config_notify_stock_qty>
+  </product>
+</products>

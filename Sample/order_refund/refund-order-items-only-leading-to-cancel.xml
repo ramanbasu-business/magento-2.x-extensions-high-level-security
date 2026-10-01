@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<refund module="refund">
+    <order_increment_id>000000015</order_increment_id>
+    <orderitems>
+        <orderitem sku="test003" qty="1" back_to_stock="1"></orderitem>
+        <orderitem sku="stepcraft_M1000" qty="1" back_to_stock="1"></orderitem>
+    </orderitems>
+    <comment_text><![CDATA[refund]]></comment_text>
+    <comment_customer_notify>1</comment_customer_notify>
+    <send_email>1</send_email>
+    <shipping_amount>5.00</shipping_amount>
+    <adjustment_refund>0.0</adjustment_refund>
+</refund>

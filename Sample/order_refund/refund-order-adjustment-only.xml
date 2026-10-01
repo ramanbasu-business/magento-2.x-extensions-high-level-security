@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<refund module="refund">
+    <order_increment_id>000000015</order_increment_id>
+    <comment_text><![CDATA[refund - 7.80 adj only]]></comment_text>
+    <comment_customer_notify>1</comment_customer_notify>
+    <send_email>0</send_email>
+    <shipping_amount>0.00</shipping_amount>
+    <adjustment_refund>7.80</adjustment_refund>
+</refund>

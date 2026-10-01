@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<products module="invprice">
+    <product>
+        <sku>TEST001M</sku>
+        <qty>33</qty>
+        <price>9.5000</price>
+        <is_in_stock>1</is_in_stock>
+        <backorders>1</backorders>
+        <msi_sources>
+            <source>
+                <code>default</code>
+                <qty>111</qty>
+            </source>
+            <source>
+                <code>msi_source_2</code>
+                <qty>222</qty>
+            </source>
+        </msi_sources>
+
+    </product>
+
+    <product>
+        <sku>TEST004M</sku>
+        <qty>99900</qty>
+        <price>9.5000</price>
+        <is_in_stock>1</is_in_stock>
+        <backorders>1</backorders>
+        <msi_sources>
+            <source>
+                <code>default</code>
+                <qty>200</qty>
+            </source>
+            <source>
+                <code>msi_source_2</code>
+                <qty>300</qty>
+            </source>
+        </msi_sources>
+    </product>
+
+    <product>
+        <sku>URL_KEY_TEST</sku>
+        <qty>142</qty>
+        <price>29.5000</price>
+        <is_in_stock>1</is_in_stock>
+        <backorders>1</backorders>
+        <msi_sources>
+            <source>
+                <code>default</code>
+                <qty>9</qty>
+            </source>
+            <source>
+                <code>msi_source_2</code>
+                <qty>10</qty>
+            </source>
+        </msi_sources>
+    </product>
+    <product>
+        <sku>P2-RED-MEDIUM</sku>
+        <qty>299</qty>
+        <price>18.0000</price>
+        <is_in_stock>1</is_in_stock>
+        <backorders>1</backorders>
+    </product>
+
+</products>

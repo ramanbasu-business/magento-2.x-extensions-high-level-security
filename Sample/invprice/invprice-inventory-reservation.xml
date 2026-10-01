@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<products module="invprice">
+    <product>
+        <sku>URL_KEY_TEST</sku>
+        <qty>50</qty>
+        <price>29.5000</price>
+        <is_in_stock>1</is_in_stock>
+        <backorders>1</backorders>
+    </product>
+    <product>
+        <sku>TEST002</sku>
+        <qty>50</qty>
+        <price>10.00</price>
+        <is_in_stock>1</is_in_stock>
+        <backorders>1</backorders>
+    </product>
+</products>

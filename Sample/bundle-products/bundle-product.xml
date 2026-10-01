@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<products>
+    <product __defaultattributesetname="Default">
+        <type>bundle</type>
+        <sku>bundle-computer-3</sku>
+
+        <!--  Multiple websites can be set to a product  -->
+        <websiteids>1</websiteids>
+        <categories>
+            <categoryid>2</categoryid>
+            <categoryid>3</categoryid>
+        </categories>
+        <name><![CDATA[bundle-computer-3]]></name>
+        <description><![CDATA[sample text for bundle-computer-2]]></description>
+        <short_description><![CDATA[bundle-computer-3 short description]]></short_description>
+        <status>1</status>
+        <visibility>4</visibility>
+
+        <weight>1.99</weight> <!-- bundle: not set -->
+        <tax_class_id>0</tax_class_id> <!-- bundle: works only if price_type is fixed -->
+        <price>100</price> <!-- bundle: works only if price_type is fixed -->
+
+        <special_price></special_price> <!-- bundle: special price in percentage of original price -->
+        <special_from_date></special_from_date>
+        <special_to_date></special_to_date>
+
+        <msrp>299.99</msrp><!-- bundle: works only if price type is fixed -->
+
+
+        <url_key>bundle-computer-3</url_key>
+        <meta_title>bundle-computer-3 meta title</meta_title>
+        <meta_keyword>bundle-computer-3 meta keyword</meta_keyword>
+        <meta_description>bundle-computer-3 meta description</meta_description>
+
+        <qty></qty> <!-- bundle: qty not set -->
+        <is_in_stock>1</is_in_stock><!-- bundle: may not be set, default=1  -->
+        <manage_stock>1</manage_stock> <!-- bundle: may not be set, default=1 -->
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+
+        <upc></upc>
+
+        <!-- bundle options start here -->
+        <sku_type>0</sku_type> <!-- SKU type (0 - dynamic, 1- fixed) -->
+        <weight_type>1</weight_type> <!-- weight type (0 - dynamic, 1- fixed) -->
+        <shipment_type>0</shipment_type> <!--(all) shipment type (0 - together, 1 - separately) -->
+        <price_type>1</price_type> <!-- price type (0- dynamic, 1- fixed)-->
+        <price_view>0</price_view> <!-- price view (0- price range, 1- as low as) -->
+
+        <bundle_options>
+            <option>
+                <title>Processor</title>
+                <type>checkbox</type> <!--bundle: select,radio,checkbox,multi -->
+                <required>1</required>
+                <delete>0</delete>
+
+                <selections>
+                    <selection>
+                        <sku>CORE-I5</sku>
+                        <selection_qty>1</selection_qty>
+                        <selection_can_change_qty>1</selection_can_change_qty>
+                        <selection_price_value>75</selection_price_value> <!-- fixed amount or percent (when price_type=fixed) -->
+                        <selection_price_type>0</selection_price_type> <!-- 0-fixed,1-percent (when price_type=fixed) -->
+                        <delete>0</delete>
+                    </selection>
+                    <selection>
+                        <sku>CORE-I7</sku>
+                        <selection_qty>1</selection_qty>
+                        <selection_can_change_qty>1</selection_can_change_qty>
+                        <selection_price_value>100</selection_price_value> <!-- fixed amount or percent (when price_type=fixed) -->
+                        <selection_price_type>0</selection_price_type> <!-- 0-fixed,1-percent (when price_type=fixed) -->
+                        <delete>0</delete>
+                    </selection>
+                </selections>
+            </option>
+            <option>
+                <title>RAM</title>
+                <type>radio</type><!--select,radio,checkbox,multi -->
+                <required>1</required>
+                <delete>0</delete>
+
+                <selections>
+                    <selection>
+                        <sku>8GB-RAM</sku>
+                        <selection_qty>1</selection_qty>
+                        <selection_can_change_qty>1</selection_can_change_qty>
+                        <selection_price_value>10</selection_price_value> <!-- fixed amount or percent (when price_type=fixed) -->
+                        <selection_price_type>0</selection_price_type> <!-- 0-fixed,1-percent (when price_type=fixed) -->
+                        <delete>0</delete>
+                    </selection>
+                    <selection>
+                        <sku>16GB-RAM</sku>
+                        <selection_qty>1</selection_qty>
+                        <selection_can_change_qty>1</selection_can_change_qty>
+                        <selection_price_value>20</selection_price_value> <!-- fixed amount or percent (when price_type=fixed) -->
+                        <selection_price_type>0</selection_price_type> <!-- 0-fixed,1-percent (when price_type=fixed) -->
+                        <delete>0</delete>
+                    </selection>
+                </selections>
+            </option>
+        </bundle_options>
+
+        <!-- bundle options end here -->
+    </product>
+
+</products>

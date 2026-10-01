@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<order module="order_void">
+    <order_increment_id>000000003</order_increment_id>
+    <comment_text><![CDATA[Authorized payment has been voided]]></comment_text>
+    <comment_customer_notify>1</comment_customer_notify>
+    <send_email>0</send_email>
+</order>

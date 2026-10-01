@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<products>
+    <product __defaultattributesetname="Default"> <!--__relatedskus="S1-RELATED"-->
+        <type>simple</type>
+        <sku>CORE-I7</sku>
+        <!--  Multiple websites can be set to a product  -->
+        <websiteids>1</websiteids>
+        <categories>
+            <categoryid>1</categoryid>
+            <categoryid>2</categoryid>
+        </categories>
+        <name><![CDATA[CORE-I7]]></name>
+        <description><![CDATA[CORE-I7]]></description>
+        <short_description><![CDATA[]]></short_description>
+        <weight>2.22</weight>
+        <status>1</status>
+        <visibility>4</visibility>
+        <tax_class_id>0</tax_class_id>
+        <price>100.00</price>
+        <special_price>199.99</special_price>
+        <special_from_date>2016-09-01</special_from_date>
+        <special_to_date>2016-09-05</special_to_date>
+        <msrp>299.99</msrp>
+        <url_key>CORE-I7</url_key>
+        <meta_title>CORE-I7 meta title</meta_title>
+        <meta_keyword>CORE-I7 meta keyword</meta_keyword>
+        <meta_description>CORE-I7 meta description</meta_description>
+
+        <qty>100</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+
+        <upc></upc>
+
+    </product>
+
+</products>

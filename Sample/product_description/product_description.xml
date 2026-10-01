@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<products module="description">
+	<product __defaultattributesetname="Default" __validate_attribute="false">
+		<type>simple</type>
+		<sku><![CDATA[URL_KEY_TEST]]></sku>
+		<websiteids>1</websiteids>
+		<description><![CDATA[URL_KEY_TEST description update]]></description>
+		<short_description><![CDATA[URL_KEY_TEST short description update]]></short_description>
+	</product>
+
+	<product __defaultattributesetname="Default" __validate_attribute="false">
+		<type>simple</type>
+		<sku><![CDATA[TEST002]]></sku>
+		<websiteids>1</websiteids>
+		<description><![CDATA[TEST002 description update]]></description>
+		<short_description><![CDATA[TEST002 short description update]]></short_description>
+	</product>
+
+	<product __defaultattributesetname="Default" __validate_attribute="false">
+		<type>simple</type>
+		<sku><![CDATA[XIABSHRK2128GB6SLV]]></sku>
+		<websiteids>1</websiteids>
+		<description><![CDATA[XIABSHRK2128GB6SLV description update]]></description>
+		<short_description><![CDATA[XIABSHRK2128GB6SLV short description update]]></short_description>
+	</product>
+
+</products>

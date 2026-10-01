@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<orders module="shipping">
+    <order>
+        <orderid>000000021</orderid>
+        <!--
+        <carrier_code>free</carrier_code>
+        <title>Free Shipping</title>
+        <number>000000009</number>
+        -->
+        <trackings>
+            <tracking>
+                <carrier_code>dhl</carrier_code>
+                <title>DHL</title>
+                <number>200001</number>
+            </tracking>
+            <tracking>
+                <carrier_code>free</carrier_code>
+                <title>Free Shipping</title>
+                <number>200002</number>
+            </tracking>
+        </trackings>
+
+        <comment></comment>
+        <shipment_date>2022-11-18 07:56:23</shipment_date>
+        <orderitems>
+            <orderitem sku="test003" qty="1"></orderitem>
+        </orderitems>
+    </order>
+
+</orders>

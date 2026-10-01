@@ -1,0 +1,236 @@
+<?xml version="1.0" ?>
+<products>
+  <product __defaultattributesetname="Default">
+    <type>simple</type>
+    <sku>P2-RED-SMALL</sku>
+    <categories>
+      <categoryid>2</categoryid>
+    </categories>
+    <name><![CDATA[P2-RED-SMALL]]></name>
+    <description><![CDATA[ P2-RED-SMALL]]></description>
+    <short_description><![CDATA[P2-RED-SMALL]]></short_description>
+    <weight>10</weight>
+    <status>1</status>
+    <visibility>4</visibility>
+    <price>11</price>
+
+    <tax_class_id>0</tax_class_id>
+
+    <additional_attributes>
+      <associativeentity>
+        <key>color</key>
+        <value>Red</value>
+        <type>select</type>
+      </associativeentity>
+
+      <associativeentity>
+        <key>size</key>
+        <value>Small</value>
+        <type>select</type>
+      </associativeentity>
+
+    </additional_attributes>
+    <qty>100</qty>
+    <is_in_stock>1</is_in_stock>
+    <manage_stock>1</manage_stock>
+    <min_qty>0</min_qty>
+    <min_sale_qty>0</min_sale_qty>
+    <max_sale_qty>0</max_sale_qty>
+    <use_config_backorders>true</use_config_backorders>
+    <notify_stock_qty>1</notify_stock_qty>
+    <use_config_notify_stock_qty>true</use_config_notify_stock_qty>
+  </product>
+
+  <product __defaultattributesetname="Default"
+    >
+    <type>simple</type>
+    <sku>P2-RED-MEDIUM</sku>
+    <categories>
+      <categoryid>2</categoryid>
+    </categories>
+    <name><![CDATA[P2-RED-MEDIUM]]></name>
+    <description><![CDATA[P2-RED-MEDIUM]]></description>
+    <short_description><![CDATA[P2-RED-MEDIUM]]></short_description>
+    <weight>10</weight>
+    <status>1</status>
+    <visibility>4</visibility>
+    <price>12</price>
+
+    <tax_class_id>0</tax_class_id>
+
+    <additional_attributes>
+      <associativeentity>
+        <key>color</key>
+        <value>Red</value>
+        <type>select</type>
+      </associativeentity>
+
+      <associativeentity>
+        <key>size</key>
+        <value>Medium</value>
+        <type>select</type>
+      </associativeentity>
+
+    </additional_attributes>
+    <qty>100</qty>
+    <is_in_stock>1</is_in_stock>
+    <manage_stock>1</manage_stock>
+    <min_qty>0</min_qty>
+    <min_sale_qty>0</min_sale_qty>
+    <max_sale_qty>0</max_sale_qty>
+    <use_config_backorders>true</use_config_backorders>
+    <notify_stock_qty>1</notify_stock_qty>
+    <use_config_notify_stock_qty>true</use_config_notify_stock_qty>
+  </product>
+
+  <product __defaultattributesetname="Default"
+    >
+    <type>simple</type>
+    <sku>P2-GREEN-SMALL</sku>
+    <categories>
+      <categoryid>2</categoryid>
+    </categories>
+    <name><![CDATA[P2-GREEN-SMALL]]></name>
+    <description><![CDATA[P2-GREEN-SMALL]]></description>
+    <short_description><![CDATA[P2-GREEN-SMALL]]></short_description>
+    <weight>10</weight>
+    <status>1</status>
+    <visibility>4</visibility>
+    <price>13</price>
+
+    <tax_class_id>0</tax_class_id>
+
+    <additional_attributes>
+      <associativeentity>
+        <key>color</key>
+        <value>Green</value>
+        <type>select</type>
+      </associativeentity>
+
+      <associativeentity>
+        <key>size</key>
+        <value>Small</value>
+        <type>select</type>
+      </associativeentity>
+
+    </additional_attributes>
+    <qty>100</qty>
+    <is_in_stock>1</is_in_stock>
+    <manage_stock>1</manage_stock>
+    <min_qty>0</min_qty>
+    <min_sale_qty>0</min_sale_qty>
+    <max_sale_qty>0</max_sale_qty>
+    <use_config_backorders>true</use_config_backorders>
+    <notify_stock_qty>1</notify_stock_qty>
+    <use_config_notify_stock_qty>true</use_config_notify_stock_qty>
+  </product>
+
+  <product __defaultattributesetname="Default"
+    >
+    <type>simple</type>
+    <sku>P2-GREEN-MEDIUM</sku>
+    <categories>
+      <categoryid>2</categoryid>
+    </categories>
+    <name><![CDATA[P2-GREEN-MEDIUM]]></name>
+    <description><![CDATA[P2-GREEN-MEDIUM]]></description>
+    <short_description><![CDATA[P2-GREEN-MEDIUM]]></short_description>
+    <weight>10</weight>
+    <status>1</status>
+    <visibility>4</visibility>
+    <price>14</price>
+
+    <tax_class_id>0</tax_class_id>
+
+    <additional_attributes>
+      <associativeentity>
+        <key>color</key>
+        <value>Green</value>
+        <type>select</type>
+      </associativeentity>
+
+      <associativeentity>
+        <key>size</key>
+        <value>Medium</value>
+        <type>select</type>
+      </associativeentity>
+
+    </additional_attributes>
+    <qty>100</qty>
+    <is_in_stock>1</is_in_stock>
+    <manage_stock>1</manage_stock>
+    <min_qty>0</min_qty>
+    <min_sale_qty>0</min_sale_qty>
+    <max_sale_qty>0</max_sale_qty>
+    <use_config_backorders>true</use_config_backorders>
+    <notify_stock_qty>1</notify_stock_qty>
+    <use_config_notify_stock_qty>true</use_config_notify_stock_qty>
+  </product>
+
+  <product __defaultattributesetname="Default" __configattr="color, size" __childsku="P2-RED-SMALL, P2-RED-MEDIUM, P2-GREEN-SMALL, P2-GREEN-MEDIUM" >
+    <type>configurable</type>
+    <sku>P2</sku>
+    <categories>
+      <categoryid>2</categoryid>
+      <categoryid>3</categoryid>
+    </categories>
+
+    <name><![CDATA[P2 Config Matrix Parent]]></name>
+    <description><![CDATA[P2 Config Matrix Parent]]></description>
+    <short_description><![CDATA[P2 Config Matrix Parent]]></short_description>
+    <weight>40</weight>
+    <status>1</status>
+    <visibility>3</visibility>
+    <price>10</price>
+
+    <is_in_stock>1</is_in_stock>
+    <manage_stock>1</manage_stock>
+    <min_qty>0</min_qty>
+    <min_sale_qty>0</min_sale_qty>
+    <max_sale_qty>0</max_sale_qty>
+    <backorders>0</backorders>
+    <use_config_backorders>1</use_config_backorders>
+    <notify_stock_qty>1</notify_stock_qty>
+    <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+
+    <additional_attributes>
+      <associativeentity>
+        <key>manufacturer</key>
+        <value>1st Endurance</value>
+      </associativeentity>
+
+      <associativeentity>
+        <key>msrp_enabled</key>
+        <value>2</value>
+      </associativeentity>
+
+      <associativeentity>
+        <key>msrp_display_actual_price_type</key>
+        <value>4</value>
+      </associativeentity>
+    </additional_attributes>
+
+    <super_attributes>
+      <super_attribute>
+        <code>color</code>
+        <label>Red</label>
+        <price_change>-1</price_change>
+      </super_attribute>
+      <super_attribute>
+        <code>color</code>
+        <label>Green</label>
+        <price_change>-2</price_change>
+      </super_attribute>
+      <super_attribute>
+        <code>Size</code>
+        <label>Small</label>
+        <price_change>2</price_change>
+      </super_attribute>
+      <super_attribute>
+        <code>size</code>
+        <label>Medium</label>
+        <price_change>2</price_change>
+      </super_attribute>
+    </super_attributes>
+  </product>
+</products>

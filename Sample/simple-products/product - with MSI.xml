@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<products>
+    <product __defaultattributesetname="Default"> <!--__relatedskus="S1-RELATED"-->
+        <type>simple</type>
+        <sku>TEST002</sku>
+        <!--  Multiple websites can be set to a product  -->
+        <websiteids>1</websiteids>
+        <categories>
+            <categoryid>3</categoryid>
+            <categoryid>4</categoryid>
+        </categories>
+        <name><![CDATA[TEST002]]></name>
+        <description><![CDATA[SIMPLE_EXTREME_NEW of vibration damping and sound absorption materials formulated to eliminate vibration caused by road noise, engine noise, structural vibrations, and loud systems!&nbsp; It is used to increase the ride quality and the actual response of your system.&nbsp; HushMat offers kits for numerous applications such as a starter kit for basic dampening, a door kit, a trunk kit, and for the people who want extreme dampening, a bulk kit.&nbsp; The two most important factors of HushMat is vibration damping and sound absorption.]]></description>
+        <short_description><![CDATA[Brand new HushMat door kit with 10 BLACK sheets 12"x12" (10 square feet)]]></short_description>
+        <weight>222.22</weight>
+        <status>1</status>
+        <visibility>4</visibility>
+        <tax_class_id>0</tax_class_id>
+        <price>10.00</price>
+        <special_price>199.99</special_price>
+        <special_from_date>2016-09-01</special_from_date>
+        <special_to_date>2016-09-05</special_to_date>
+        <msrp>299.99</msrp>
+        <url_key>TEST002</url_key>
+        <meta_title>TEST002 meta title</meta_title>
+        <meta_keyword>TEST002 meta keyword</meta_keyword>
+        <meta_description>TEST002 meta description</meta_description>
+
+        <qty>9</qty>
+        <is_in_stock>1</is_in_stock>
+        <manage_stock>1</manage_stock>
+        <min_qty>0</min_qty>
+        <min_sale_qty>0</min_sale_qty>
+        <max_sale_qty>0</max_sale_qty>
+        <use_config_backorders>1</use_config_backorders>
+        <notify_stock_qty>1</notify_stock_qty>
+        <use_config_notify_stock_qty>1</use_config_notify_stock_qty>
+
+        <msi_sources>
+            <source>
+                <code>default</code>
+                <qty>9</qty>
+            </source>
+            <source>
+                <code>msi_source_2</code>
+                <qty>10</qty>
+            </source>
+        </msi_sources>
+
+        <upc>881101102004</upc>
+
+        <ts_dimensions_length>20</ts_dimensions_length>
+        <ts_dimensions_width>30</ts_dimensions_width>
+        <ts_dimensions_height>40</ts_dimensions_height>
+
+        <additional_attributes>
+            <associativeentity>
+                <key>ts_dimensions_height</key>
+                <value>300</value>
+            </associativeentity>
+        </additional_attributes>
+    </product>
+
+</products>

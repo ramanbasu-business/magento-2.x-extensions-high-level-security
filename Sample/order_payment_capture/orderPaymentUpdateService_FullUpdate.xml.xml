@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<order module="order_payment_update">
+    <order_increment_id>100000197</order_increment_id>
+    <payment>
+        <amount>5.0</amount>
+        <!--<method>checkmo</method>-->
+        <!--<method>paypal_express</method>-->
+        <!--<method>paypal_standard</method>-->
+        <!--<method>ccsave</method>-->
+        <method>ccsave</method>
+        <lasttransid>AXN_12345678_ABC</lasttransid>
+        <cc_owner>SAMPLE CUSTOMER</cc_owner><!-- Optional -->
+        <cc_number></cc_number><!-- Optional -->
+        <cc_type>VI</cc_type><!--Optional - Visa(VI)/MasterCard(MC)/ American Express(AE)/Discover(DI) -->
+        <cc_exp_month>10</cc_exp_month><!-- Optional -->
+        <cc_exp_year>2016</cc_exp_year><!-- Optional -->
+    </payment>
+</order>

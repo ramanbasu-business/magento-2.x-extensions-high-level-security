@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<products module="invprice">
+<product>
+<sku><![CDATA[store_test]]></sku>
+<websiteids>2</websiteids>
+<price>110</price>
+<special_price></special_price>
+
+<tierprices>
+<tier>
+    <website_id>0</website_id>
+    <cust_group>0</cust_group>
+    <price_qty>4</price_qty>
+    <!--<price>99</price>-->
+    <!-- PRice can be ignored since  percentage_value is given-->
+    <percentage_value>5</percentage_value>
+</tier>
+<tier>
+    <website_id>0</website_id>
+    <cust_group>0</cust_group>
+    <price_qty>10</price_qty>
+    <price>103.99</price>
+</tier>
+</tierprices>
+
+</product>
+
+</products>
