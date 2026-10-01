@@ -2,21 +2,10 @@
 
 /*
  * Company Plugin
-
-  NOTICE OF LICENSE
-
-  This source file is subject to the Open Software License (OSL 3.0)
-
-  DISCLAIMER
-
-  Do not edit or add to this file if you wish to upgrade to newer
-  versions in the future. If you wish to customize this extension for your
-  needs please refer to http://www.company.com for more information.
-
-  @author      Raman Basu <support@company.com>
-  @package     Company/Plugin
-  @copyright   Copyright (C) 2016 Company <support@company.com>
-  @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+ * This file is part of the Company Plugin for Magento.
+ *
+ * @package Company\\Plugin
  */
 
 namespace Company\Plugin\Block;
@@ -37,10 +26,10 @@ class JobsBlock extends Template
     ) {
         $this->coreRegistry = $coreRegistry;
         $this->jobFactory = $jobFactory;
-        
+
         parent::__construct($context, $data);
     }
-    
+
     public function getCollection($id, $module, $submittedFrom, $submittedTo)
     {
         $this->collection = $this->jobFactory->create()->getCollection();
@@ -49,7 +38,7 @@ class JobsBlock extends Template
         if ($id != ""):
             $this->collection->addFieldToFilter('id', ['eq' => [$id]]);
         endif;
-        
+
         if ($module != "ALL"):
             if ($module == ""):
                 //$this->_collection->addFieldToFilter('module', array('eq' => array($module)));
@@ -61,7 +50,7 @@ class JobsBlock extends Template
                 $this->collection->addFieldToFilter('module', ['eq' => [$module]]);
             endif;
         endif;
-        
+
         if ($submittedFrom != "" && $submittedTo != ""):
             $this->collection->addFieldToFilter(
                 'submittedon',
@@ -75,23 +64,21 @@ class JobsBlock extends Template
 
         return $this->collection;
     }
-    
+
     public function getFormAction()
     {
         return '/Plugin/jobs/index';
     }
-    
+
     public function isAuthenticated()
     {
         return $this->coreRegistry->registry('isAuthenticated');
     }
-    
-    public function getQueryString($endPoint, $jobId, $postedData)
+
+    public function getQueryString($endPoint, $jobId, $postedData = [])
     {
         return $this->getBaseUrl()
             . 'plugin/import/' . $endPoint
-            . '?id=' . $jobId
-            . '&u=' . urlencode($postedData["txtUserName"])
-            . '&p=' . urlencode($postedData["txtPassword"]);
+            . '?id=' . (int) $jobId;
     }
 }
